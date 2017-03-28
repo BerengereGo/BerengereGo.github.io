@@ -2,7 +2,7 @@
   <html>
   
     <head>
-        <meta charset = "utf8">                             
+        <meta charset = "utf-8">                             
         <title> HTML pour les Zéros !! </title>     
     </head>
     
@@ -15,7 +15,7 @@
           <li> <a href = "#bienvenue" > Bienvenue en HTML </a> </li>
           <li> <a href = "#structure" > Structure d'un document HTML </a> </li>
           <li> <a href = "#body" > Entrons dans le body </a> </li>
-            <ul> 
+           
               <li> <a href = "#titre" > Titre </a> </li>
               <li> <a href = "#balise" > Vos premières balises </a> </li>
               <li> <a href = "#interdit" > Balises interdites </a> </li>
@@ -26,7 +26,7 @@
               <li> <a href = "#image" > Les images </a> </li>
               <li> <a href = "#tableau" > Les tableaux </a> </li>
               <li> <a href = "#" > ... </a> </li>
-            </ul>
+           
          </ol>
       </nav>
                 
@@ -224,15 +224,19 @@
       <p> NB2 : l'utilisation du dièse (#) avant un nom corrspond à un fragment d'URL, ce qui indique une cible interne au document (un ID).
       
       <p> Il existe un autre attribut que l'on peut ajouter à notre balise &lt; a &gt; : il s'agit de l'attribut target. 
-      Target permet de définir l'ouvrerture de l'URL entrée en valeur dans l'attribut href. On peut trouver 4 valeurs pour l'attribut target ;
+      Target permet de définir l'ouvrerture de l'URL entrée en valeur dans l'attribut href. On peut trouver 4 valeurs pour l'attribut target ;</p>
       <ul>
-        <li> -self = valeur par défaut (on peut ne rien écrire en valeur, c'est le même résultat) qui permet de charger la réponse dans le contexte de navigation courant. </li>
-        <li> -blank = charge la réponse dans une nouvelle page </li>
-        <li> -parent = harge la réponse dans le <frameset> HTML4 parent de la frame courante ou dans le contexte de navigation HTML5 parent relativement au contexte courant). 
+        <li> _self = valeur par défaut (on peut ne rien écrire en valeur, c'est le même résultat) qui permet de charger la réponse dans le contexte de navigation courant. </li>
+        <li> _blank = charge la réponse dans une nouvelle page </li>
+        <li> _parent = harge la réponse dans le <frameset> HTML4 parent de la frame courante ou dans le contexte de navigation HTML5 parent relativement au contexte courant). 
         S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
-        <li> -top = En HTML4 : charge la réponse dans la fenêtre originale, annulant toutes les autres frames. 
+        <li> _top = En HTML4 : charge la réponse dans la fenêtre originale, annulant toutes les autres frames. 
         En HTML5 : charge la réponse dans le contexte de navigation de plus haut niveau (c'est à dire, le contexte de navigation parent par rapport à l'actuel, 
         et qui n'a lui-même aucun parent). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
+      </ul>
+      <p> Voici ce que ça donne en texte HTML : </p>
+      <p> &lt; a  href = "URL" </p>
+      <p>  target = "_blank" &gt; Vive Paques &lt; / a &gt; </p>
       </section>
       
       <section id = "image">
