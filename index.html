@@ -7,32 +7,40 @@
 	</head>
 	
 	<body>	
-		<h1> Introduction </h1>
+		<section> 
+		<h1> Bienvenue dans le monde HTML pour les Zéros </h1>
 		<p> Avant toutes choses, il est important de poser cette première idée : 
 		le langage HTML (HyperText Markup Language) est un langage de description de données et NON de programmation !!
 		Ce langage permet donc de structurer des données tel que du texte mais également des données vidéo, audio... . C'est la base du développement d'un site Web qui donne son SENS.
-		En parallèle, il existe un autre langage, le CSS (Cascading Style Sheets) qui est un langage utilisé pour la forme, nous reviendrons sur ce langage plus tard, chaque chose en son temps.
-		</p>
-		<p> Tout document HTML DOIT être unique !
-		</p>
-		<p> Le point de départ du langage HTML repose sur l'utilisation de balises, les balises seront délimitées par des chevrons : &lt; ... &gt;.  Il existe plusieurs types de balises
-		: </p>
+		En parallèle, il existe un autre langage, le CSS (Cascading Style Sheets) qui est un langage utilisé pour la forme, nous reviendrons sur ce langage plus tard, 
+		chaque chose en son temps (pour une bref introduction du CSS, 
+		<a href = "css.html"> cliquer ici </a>. </p>
+		<p> Tout document HTML DOIT être unique ! </p>
+		<p> Règle d'or d'écriture : bien incrémenter son texte pour lisibilité, et pour soi, et pour les copains amenés potentiellement à relire votre HTML par la suite. </p> 
+		
+		<h2> Structure d'un document HTML </h2>
+		<p> Le point de départ du langage HTML repose sur l'utilisation de balises (d'où son nom "Markup Language"), les balises seront délimitées par des chevrons : &lt; ... &gt;. 
+		Il existe plusieurs types de balises : </p>
 		<ul> 
 			<li> Balise ouvrante = &lt; balise &gt; </li>
 			<li> Balise fermante = &lt; / balise &gt; </li>
 			<li> Balise auto-fermante = &lt; balise / &gt;, moins utilisée </li>
-		</ul>
-		<p> Si l'on se focalise sur les deux premières balises, on définit un block. Ce block est délimité par une balise ouvrante et une balise fermante. 
-		Tout ce qui se trouve entre ces 2 balises sont de enfants de cette balises. Il n'y a pas de délimitation au nombre d'imbrications de balises dans une balise.
-		</p>
+		</ul> 
+		
+		<p> Si l'on se focalise sur les deux premières balises, on définit un block. Ce block est donc délimité par une balise ouvrante et une balise fermante. 
+		Toutes les balises qui se trouvent entre ces 2 balises sont de enfants de cette balise. Il n'y a pas de délimitation au nombre d'imbrications de balises dans une balise. </p>
 		<p> &lt; "balise ouvrante" &gt; </p>
 		<p> enfants de la balise = contenu </p>
 		<p> &lt; "balise fermante" &gt; </p>
 		
-		<h2>  Structure d'un document HTML </h2>
-		<p> Règle d'or d'écriture : bien incrémenter son texte pour lisibilité. </p>
-		<p> Tout document commence par une balise indispensable permettant de définir avec quelle version HTML on travaille &lt; ! doctype html &gt; </p>
-		<p> Suite, à cette balise, l'ensemnle du texte commence par &lt; / html &gt; et se terminera par &lt; / html &gt; </p>
+		<p> A la notion de balise qui est incontournable, vous l'aurez compris, il faut ajouter les notions d'attibut et de valeur de ces attributs. 
+		Comme un exemple vaut mieux que beaucoup de mots, le voici : &lt;a href = " URL du lien " &gt; histoire des coucous &lt;/a&gt;.
+		Pour mettre des mots clairs sur cet exemple, décomposons!</p>
+		<p> " -blank " est la valeur de notre attribut href qui définit notre balise a. L'attribut permet donc de définir une balise et ce sous la forme : nom = " ... ".  
+		Notons qu'une balise peut être définie par plusieurs attributs. Encore un peu de patience pour comprendre la fonction de cet exemple, ça viendra.
+		
+		<p> Tout document HTML commence par une balise indispensable permettant de définir sous quelle version HTML on travaille &lt; ! doctype html &gt; </p>
+		<p> Suite, à cette balise, l'ensemble du texte commence par &lt; / html &gt; et se terminera par &lt; / html &gt; </p>
 		<p> Ensuite, le texte HTML se divise en 2 parties : </p>
 		
 		<ul>
@@ -56,31 +64,40 @@
 		<p> &lt; / html &gt; </p>
 		<p> NB : la balise HTML contient donc 2 enfants qui sont la balise Head et la balise Body. </p>
 		
-		<h2>  Convention d'écriture dans le Corps du texte </h2>
-		<p> En HTML, il y a au maximum 6 niveaux de titres pour organiser sémantiquement un texte : </p>
-		<p> &lt;h1&gt; texte &lt; /h1&gt; : niveau 1 (les plus gros caractères)
-		<p> &lt;h2&gt; texte &lt; /h2&gt; : niveau 2
-		<p> &lt;h3&gt; texte &lt; /h3&gt; : niveau 3
-		<p> &lt;h4&gt; texte &lt; /h4&gt; : niveau 4
-		<p> &lt;h5&gt; texte &lt; /h5&gt; : niveau 5
-		<p> &lt;h6&gt; texte &lt; /h6&gt; : niveau 6 (les plus petits caractères)
+		<h2>  Entrons dans le Body </h2>
+		
+		<h3> Titres </h3>
+		<p> En HTML, il y a au maximum 6 niveaux de titres pour organiser sémantiquement un texte :
+		<ul>
+			<li> &lt;h1&gt; texte &lt; /h1&gt; : niveau 1 (les plus gros caractères) </li>
+			<li> &lt;h2&gt; texte &lt; /h2&gt; : niveau 2 </li>
+			<li> &lt;h3&gt; texte &lt; /h3&gt; : niveau 3 </li>
+			<li> &lt;h4&gt; texte &lt; /h4&gt; : niveau 4 </li>
+			<li> &lt;h5&gt; texte &lt; /h5&gt; : niveau 5 </li>
+			<li> &lt;h6&gt; texte &lt; /h6&gt; : niveau 6 (les plus petits caractères) </li>
+		</ul> 
+		</p>
+		
+		<h3> Vos premières balises </h3>		
 		<p> Balise de paragraphe &lt;p&gt; zone de texte &lt; /p &gt;. 
 		Tout le texte contenu entre ces balises s'affichera en ligne et s'ajuste automatiquement à la taille de la fenêtre. </p>
 		<p> Balise de italique &lt;em&gt; zone de texte ou mot &lt; /em &gt;. </p>
 		<p> Balise d'écriture en gras &lt;strong&gt; zone de texte ou mot &lt; /strong &gt;. </p>
 		<p> Balise de surlignage &lt;mark&gt; zone de texte ou mot &lt; /mark &gt;. </p>
-		<p> NB: les 3 dernières balises sont uniquement pour mettre en valeur la sémantique !! pas de mise forme !! </p>
+		<p> NB : les 3 dernières balises sont uniquement pour mettre en valeur la sémantique !! pas de mise forme !! </p>
+		<p> NB2 : Dans toute règle il y a une exception: la balise &lt; pre &gt;. Cette balise est du type block et est la seule à avoir un impact sur la présentation, 
+		ce qui sous-entend implicitement que cette présentation a du sens! </p>
 		
-		<h2> Balises interdites </h2>
+		<h3> Balises interdites </h3>
+		<p> Il est fortement déconseillé de les utiliser pas car elles posent des problèmes pour les logiciels de lecture d'HTML pour les personnes non-voyantes 
+		mais aussi pour les robots Google ou Bing des moteurs de recherche </p>
 		<ul> 
 			<li> saut de ligne &lt; br &gt;. </li>
 			<li> trait horizontal &lt; hr &gt; </li>
 		</ul>
-		<p> on ne les utilise pas car posent des problèmes pour les logiciels de lecture d'HTML pour les personnes non-voyantes 
-		mais aussi pour les robots Google ou Bing des moteurs de recherche </p>
 		
-		<h2> Les listes </h2>
-		<p> Il ya deux types de listes très utilisées et 1 type moins utilisé :</p>
+		<h3> Les listes </h3>
+		<p> Il y a deux types de listes très utilisées et 1 type moins utilisé :</p>
 		<ul> 
 			<li> liste ordonnée </li>
 			<li> liste désordonnée </li>
@@ -93,14 +110,52 @@
 		<p> La liste de définition pour allier définition et terme défini </p>
 		<p> Voici comment la baliser : &lt;dl&gt; &lt;dt&gt; terme1 &lt;/dt&gt; &lt;dd&gt; définition &lt;/dd&gt; &lt; &lt;/dl&gt;
 		
-		<h2> Echappement en HTML </h2>
+		<h3> Echappement en HTML </h3>
 		<p> Pour les besoins de rédaction, il se peut qu'on ait besoin d'écrire certains caractères comme &lt; &gt; ou &amp;. 
-		On appelle cela l'échappement qui correspond à des normes d'écriture qui permettent au texte HTML de comprendre que es caractères sont à lire "normalement" et non pas pour définir un code précis.
-		Ainsi,
-		</p>
+		On appelle cela l'échappement qui correspond à des normes d'écriture qui permettent au texte HTML de comprendre que des caractères sont à lire "normalement"
+		et non pas pour définir un code précis.
+		Ainsi, certaines synthaxes sont à connaitre : </p>
 		<ul>
 			<li> pour le chevron &lt; on écrira  &amplt;</li>
 			<li> pour le chevron &gt; on écrira  &ampgt; </li>
-			<li> pour le caractère &amp; on écrira  & amp; </li>
+			<li> pour le caractère &amp; on écrira  &ampamp; </li>
+		</ul>
+		
+		<h3> Création d'un lien hypertexte </h3>
+		<p> Les liens permettent de parcourir un texte de manière non-linéraire. En HTML, on utilise les balises &lt; a &gt; et &lt; /a &gt; 
+		Revenons sur notre exemple précédent, l'élément &lt;a&gt; : &lt;a href = " URL du lien " &gt; histoire des coucous &lt;/a&gt;. 
+		Cet élément permet de définir un hyperlien vers un endroit différent situé sur la même page ou vers une autre page sur le Web.
+		l'URL (Uniform Resource Locator) désigne une chaîne de caractères utilisée pour définir un chemin soit vers un endroit précis du Web ou sur un endroit précis de votre machine.
+		Quelques points importants :
+		<ul>
+			<li> plus l'URL est court, mieux ce sera </li>
+			<li> le texte explicatif du lien doit être précis </li>
+			<li> si on renomme ou change un fichier définit par l'URL, il faut changer manuellement la valeur de cet URL. </li>
+		</ul> 
+		</p>
+		
+	<h2> Organisation HTML d'une page Web </h2>
+	<p> Si on schématise une page web, on peut la diviser en 5 entités :
+	<ul>
+		<li> l'entête, pouvant contenir du texte, des images, un logo .... </li>
+		<li> le pied de page </li>
+		<li> une partie navigation pouvant contenir un sommaire par exemple </li>
+		<li> une partie texte de la page elle même divisible en articles et sections </li>
+		<li> une partie en aparté pour y mettre les informations secondaires par rapport à la page Web mais qui peuvent avoir de l'intérêt pour notre utilisateur,
+		mais on pourra aussi y inclure des publicités </li>
+	</ul>
+	Chaque zone, contenue dans le body, possède sa balise; 
+	<ul>
+		<li> &lt; header &gt; &lt; / header &gt; pour délimiter l'entête </li>
+		<li> &lt; footer &gt; &lt; / footer &gt; pour délimiter le pied de page </li>
+		<li> &lt; nav &gt; &lt; / nav &gt; pour délimiterune partie navigation pouvant contenir un sommaire par exemple </li>
+		<li> &lt; section &gt; &lt; / section &gt; ou &lt; article &gt; &lt; / article &gt pour définir la partie texte </li>
+		<li> &lt; header &gt; &lt; / header &gt;une partie en aparté pour y mettre les informations secondaires par rapport à la page Web mais qui peuvent avoir de l'intérêt pour notre utilisateur,
+		mais on pourra aussi y inclure des publicités </li>
+	</ul>
+	</section>
+	
+	<aside> </aside>
+	
 	</body>
   </html>
