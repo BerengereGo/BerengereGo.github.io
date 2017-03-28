@@ -118,13 +118,38 @@
 		<ul>
 			<li> pour le chevron &lt; on écrira  &amplt;</li>
 			<li> pour le chevron &gt; on écrira  &ampgt; </li>
-			<li> pour le caractère &amp; on écrira  &ampamp; </li>
+			<li> pour le caractère &amp; on écrira  &amp;amp; </li>
 		</ul>
 		
-		<h3> Création d'un lien hypertexte </h3>
+	<h3> Organisation HTML d'une page Web </h3>
+	<p> Si on schématise une page web, on peut la diviser en 5 entités :
+	<ul>
+		<li> l'entête, pouvant contenir du texte, des images, un logo .... </li>
+		<li> le pied de page </li>
+		<li> une partie navigation pouvant contenir un sommaire par exemple. Cette partie permet donc de naviguer dans une page mais aussi dans le site dans son ensemble </li>
+		<li> une partie texte de la page elle même divisible en articles et sections </li>
+		<li> une partie en aparté pour y mettre les informations secondaires par rapport à la page Web mais qui peuvent avoir de l'intérêt pour notre utilisateur,
+		mais on pourra aussi y inclure des publicités </li>
+	</ul>
+	<p> Chaque zone, contenue dans le body, possède sa balise; 
+	<ul>
+		<li> &lt; header &gt; ... &lt; / header &gt; pour délimiter l'entête </li>
+		<li> &lt; footer &gt; ... &lt; / footer &gt; pour délimiter le pied de page </li>
+		<li> &lt; nav &gt; ... &lt; / nav &gt; pour délimiter la partie navigation </li>
+		<li> &lt; section &gt; ... &lt; / section &gt; ou &lt; article &gt; &lt; / article &gt pour définir la partie texte. 
+		La différence entre ces 2 balises dépend de la façon dont on conceptualise son site. Voici un site qui pourra vous expliciter ces 2 notions 
+			<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" > définition de &lt;article&gt; </a>, 
+			<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/section" > définition de &lt;section&gt; </a> </li>
+		<li> &lt; aside &gt; ... &lt; / aside &gt; pour définir l'aparté </li>
+	</ul> 
+	Il n'y a pas de limitation au nombre de chaque balise utilisée, tant qu'il y a du sens!
+	De plus, rien n'empêche d'imbriquer un &lt;aside&gt; par exemple dans un &lt;article&gt; tant que l'information secondaire appartient à l'article et non au site!
+	</p>
+	 
+	 <h3> Lien hypertexte </h3>
 		<p> Les liens permettent de parcourir un texte de manière non-linéraire. En HTML, on utilise les balises &lt; a &gt; et &lt; /a &gt; 
 		Revenons sur notre exemple précédent, l'élément &lt;a&gt; : &lt;a href = " URL du lien " &gt; histoire des coucous &lt;/a&gt;. 
-		Cet élément permet de définir un hyperlien vers un endroit différent situé sur la même page ou vers une autre page sur le Web.
+		Cet élément, également appelé ancre, permet de définir un hyperlien vers un endroit différent situé sur la même page ou vers une autre page sur le Web.
 		l'URL (Uniform Resource Locator) désigne une chaîne de caractères utilisée pour définir un chemin soit vers un endroit précis du Web ou sur un endroit précis de votre machine.
 		Quelques points importants :
 		<ul>
@@ -133,27 +158,188 @@
 			<li> si on renomme ou change un fichier définit par l'URL, il faut changer manuellement la valeur de cet URL. </li>
 		</ul> 
 		</p>
+	<p> Via cette balise d'ancrage, on va pouvoir construire un sommaire. 
+	Cette construction se fait pas à pas, le tout est de bien indiquer les url des differents liens, les indentations pour la lisiblité, et les bonnes balises.
+	L'ensemble sera borné par les balises &lt; nav &gt; ... &lt; / nav &gt;?</p>
+	<p> &lt; nav &gt; </p>
+		<p> &lt; ol &gt; </p>
+			<p> &lt; li &gt;  </p>
+				</p> &lt;a href = " # licorne" &gt; la vie des licornes &lt;/a&gt; </p>
+			<p> &lt; /li &gt; </p>
+			<p> &lt; li &gt;  </p>
+				</p> &lt;a href = " page.html # lapin" &gt; Vive Pâques !! &lt;/a&gt; </p>
+			<p> &lt; /li &gt; </p>
+		<p> &lt; ol &gt; </p>	
+	<p> &lt; nav &gt; </p>
+		<p> ... </p>
+	<p> &lt; section id = "licorne" &gt; 
+		<p> ... (corps de l'article) </p>
+	<p> &lt; /section &gt; </p>
+	<p> &lt; section id = "lapin" &gt; 
+		<p> ... (corps de l'article) </p>
+	<p> &lt; /section &gt; </p>
+	<p>    </p>
+	<p> NB: l'attribut id DOIT être unique dans tout un document HTML, on appelle ça une contrainte. L'id doit être identifié de manière univoque. </p>
+	
+	
+	<h3> Les images </h3>
+	<p> On va pouvoir insérer des images dans un texte HTML en utilsant une nouvelle balise : &lt; img &gt; </p>
+	<p> Pour son utilisation, il faut obligatoirement utiliser 2 attibuts appelés src et alt.
+	
+	
+	
+	<h3> Les tableaux </h3>
+	<p> En HTML, un tableau est un ensemble de lignes qui contiennent des cellules. Autrement dit, il n'y aura JAMAIS de colonne.
+	 Chaque élément d'un tableau possède sa balise : </p>
+	<ul>
+		<li> &lt; table &gt; pour tableau </li>
+		<li> &lt; tr &gt; pour ligne </li>
+		<li> &lt; td &gt; pour cellule </li>
+	</ul> 
+	<p> Pour exemple, voici un tableau (2 lignes avec 2 cellules par ligne) : </p> <!-- Mettre un tableau AB/CD --> 
+	<table>
+		<tr>
+			<td> A </td >
+			<td> B </td> 
+		</tr>
+		<tr>
+			<td> C </td >
+			<td> D </td> 
+		</tr>
+	</table> 
 		
-	<h2> Organisation HTML d'une page Web </h2>
-	<p> Si on schématise une page web, on peut la diviser en 5 entités :
-	<ul>
-		<li> l'entête, pouvant contenir du texte, des images, un logo .... </li>
-		<li> le pied de page </li>
-		<li> une partie navigation pouvant contenir un sommaire par exemple </li>
-		<li> une partie texte de la page elle même divisible en articles et sections </li>
-		<li> une partie en aparté pour y mettre les informations secondaires par rapport à la page Web mais qui peuvent avoir de l'intérêt pour notre utilisateur,
-		mais on pourra aussi y inclure des publicités </li>
+	<p> Et voici le texte HTML associé : </p>
+	<p> &lt; table &gt; </p>
+			<p> &lt; tr &gt; </p>
+				<p> &lt; td &gt; A &lt; /td &gt; </p>
+				<p> &lt; td &gt; B &lt; /td &gt; </p>
+			<p> &lt; /tr &gt; </p>
+			<p> &lt; tr &gt; </p>
+				<p> &lt; td &gt; C &lt; /td &gt; </p>
+				<p> &lt; td &gt; D &lt; /td &gt; </p>
+			<p> &lt; /tr &gt; </p>
+		<p> &lt; / table &gt; </p> 
+	<p> Il est donc TRES important de respecter l'indentation car sinon le tableau devient très compliqué à déchiffrer, 
+	surtout si on rajoute ultérieurement d'autres lignes ou cellules; </p> 
+	<p> Il est également pssible de définir des entêtes et des pied de tableaux. On aura alors recours à trois autres balises :</p>
+	<ul> 
+		<li> &lt; thead &gt; ... &lt; /thead &gt; pour les entêtes de tableaux </li>
+		<li> &lt; tfoot &gt; ... &lt; /tfoot &gt; pour les pied de tableau </li>
+		<li> &lt; th &gt; ... &lt; /th &gt; chaque cellule dans la ligne thead ou tfoot cat th est utilisé pour les deux. </li>
 	</ul>
-	Chaque zone, contenue dans le body, possède sa balise; 
-	<ul>
-		<li> &lt; header &gt; &lt; / header &gt; pour délimiter l'entête </li>
-		<li> &lt; footer &gt; &lt; / footer &gt; pour délimiter le pied de page </li>
-		<li> &lt; nav &gt; &lt; / nav &gt; pour délimiterune partie navigation pouvant contenir un sommaire par exemple </li>
-		<li> &lt; section &gt; &lt; / section &gt; ou &lt; article &gt; &lt; / article &gt pour définir la partie texte </li>
-		<li> &lt; header &gt; &lt; / header &gt;une partie en aparté pour y mettre les informations secondaires par rapport à la page Web mais qui peuvent avoir de l'intérêt pour notre utilisateur,
-		mais on pourra aussi y inclure des publicités </li>
-	</ul>
+	<p> Voici le texte HTML associé aux entêtes et pied de tableau: </p>
+	<p> &lt; table &gt; </p>
+			<p> &lt; thead &gt; </p>
+				<p> &lt; th &gt; nom &lt; /th &gt; </p>
+				<p> &lt; th &gt; B &lt; /th &gt; </p>
+			<p> &lt; /thead &gt; </p>
+			<p> &lt; tfoot &gt; </p>
+				<p> &lt; th &gt; ... &lt; /th &gt; </p>
+				<p> &lt; th &gt; ... &lt; /th &gt; </p>
+			<p> &lt; /tfoot &gt; </p>
+		<p> &lt; / table &gt; </p> 
+	<p> Et voici le résultat final avec entêtes et pied de tableau
+	<table>
+		<thead>
+			<th> nom </th>
+			<th> prénom </th>
+		</thead>	
+		<tfoot>
+			<th> aa </th>
+			<th> bb </th>
+		</tfoot>
+		<tr>
+			<td> A </td >
+			<td> B </td> 
+		</tr>
+		<tr>
+			<td> C </td >
+			<td> D </td> 
+		</tr>
+	</table> 
+	
+	<p> Sachant	que par convention, on ajoutera le tableau de &lt; tr &gt; entre la balise fermante de tfoot et la balise fermante de table.
+	<p> En HTML on peut également déterminer qu'une cellule occupe un espace différent en ajoutant des attributs rowspan pour le nombre de lignes
+	et colspan pour le nombre d'épaisseur.
+	<table>
+		<tr>
+			<td rowspan = "2" 
+				colspan = "2" > A </td >
+			<td> A </td> 
+			<td> A </td>
+			<td> A </td>
+		</tr>
+		<tr>
+			<td> C </td>
+			<td> C </td> 
+			<td> C </td>
+			<td> C </td>
+		</tr>
+		<tr>
+			<td> O </td>
+			<td> O </td> 
+			<td> O </td>
+			<td> O </td>
+		</tr>
+	</table> 
+	<p> ce qui s'écrit: </p>
+		</p> &lt;table&gt; </p>
+		</p> &lt;tr&gt; </p>
+			</p> &lt;td rowspan = "2" 
+				colspan = "2" > A &lt;/td &gt; </p>
+			</p> &lt;td&gt; A &lt;/td&gt; </p>
+			</p> &lt;td&gt; A &lt;/td&gt; </p>
+			</p> &lt;td&gt; A &lt;/td&gt; </p>
+		</p> &lt;/tr&gt; </p>
+		</p> &lt;tr&gt; </p>
+			</p> &lt;td&gt; C &lt;/td&gt; </p>
+			</p> &lt;td&gt; C &lt;/td&gt; </p>
+			</p> &lt;td&gt; C &lt;/td&gt; </p>
+			</p> &lt;td&gt; C &lt;/td&gt; </p>
+		</p> &lt;/tr&gt; </p>
+	</p> &lt;/table&gt; </p>
+	
+	<p> On peut insérer une légende dans un tableau. On ajoute alors la balise &lt; caption &gt; ... &lt; /caption &gt;. 
+	Cette commande se place uniquement en première commande soit juste après la balise ouvrante &lt; table &gt; </p>
+	</p> &lt;table&gt; </p>
+		</p> &lt;caption&gt; ma légende &lt;/caption&gt; </p>
+			<p> &lt; tr &gt; </p>
+				<p> &lt; td &gt; A &lt; /td &gt; </p>
+				<p> &lt; td &gt; B &lt; /td &gt; </p>
+			<p> &lt; /tr &gt; </p>
+			<p> &lt; tr &gt; </p>
+				<p> &lt; td &gt; C &lt; /td &gt; </p>
+				<p> &lt; td &gt; D &lt; /td &gt; </p>
+			<p> &lt; /tr &gt; </p>
+		<p> &lt; / table &gt; </p> 
+		
+	<table>
+		<caption> ma légende </caption>
+			<tr>
+				<td> A </td >
+				<td> B </td> 
+			</tr>
+			<tr>
+				<td> C </td >
+				<td> D </td> 
+			</tr>
+	</table> 
+		
+	<p> Dernière info sur les tableaux qui est obselète mais qu'on se doit de connaitre au cas où on la rencontre... la balise  &lt;colgroup&gt;. Pour plus de précisions, 
+	<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/colgroup" > click click click </a>. 
+	Dans l'absolu, çela permet de définir un groupe de colonnes pour regrouper leurs informations dans un but sémantique MAIS ça ne sert plus à rien!
+	</p>
+	<p> &lt;table&gt; </p>
+		<p>&lt;colgroup&gt; </p>
+			<p>&lt;col/&gt; </p>
+			<p>&lt;col span = "2" /&gt; </p>
+		<p>&lt;/colgroup&gt; </p>
+    <p> ... <p>
+	<p>&lt;/table&gt;  </p>
+	
 	</section>
+	
+	<nav> </nav>
 	
 	<aside> </aside>
 	
