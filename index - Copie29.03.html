@@ -3,20 +3,13 @@
   
     <head>
         <meta charset = "utf-8">                             
-        <title> HTML pour les Zéros !! </title>  
-        <link rel = "stylesheet" type = "text/css" href = "styleindex.css"/> 
+        <title> HTML pour les Zéros !! </title>     
     </head>
     
     <body>  
-      <header class = "header">
       <img  src = "tortue.jpeg" 
             alt = "Bien le bonjour de la tortue rigolote" >
-      <h1>  Bienvenue dans le monde HTML pour les Zéros </h1>
-      </header>
-      
-      
-      
-      <nav class = "sommaire" > 
+      <nav> 
       <h1> Sommaire </h1> 
         <ol> 
           <li> <a href = "#bienvenue" > Bienvenue en HTML </a> </li>
@@ -36,9 +29,9 @@
            
          </ol>
       </nav>
-      
-      <section id = "bienvenue">                              <!-- <section class = "bienvenue" id = "bienvenue"> -->
-       
+                
+      <section id = "bienvenue"> 
+      <h1> Bienvenue dans le monde HTML pour les Zéros </h1> 
       <p> Avant toutes choses, il est important de poser cette première idée : 
       le langage HTML (HyperText Markup Language) est un langage de description de données et NON de programmation !!
       Ce langage permet donc de structurer des données tel que du texte mais également des données vidéo, audio... . C'est la base du développement d'un site Web qui donne son SENS.
@@ -61,11 +54,9 @@
         
       <p> Si l'on se focalise sur les deux premières balises, on définit un block. Ce block est donc délimité par une balise ouvrante et une balise fermante. 
       Toutes les balises qui se trouvent entre ces 2 balises sont de enfants de cette balise. Il n'y a pas de délimitation au nombre d'imbrications de balises dans une balise. </p>
-      <pre> 
-        &lt; "balise ouvrante" &gt;
-          enfants de la balise = contenu
-        &lt; "/balise fermante" &gt; 
-      </pre>
+      <p> &lt; "balise ouvrante" &gt; </p>
+      <p> enfants de la balise = contenu </p>
+      <p> &lt; "balise fermante" &gt; </p>
         
       <p> A la notion de balise qui est incontournable, vous l'aurez compris, il faut ajouter les notions d'attibut et de valeur de ces attributs. 
       Comme un exemple vaut mieux que beaucoup de mots, le voici : &lt;a href = " URL du lien " &gt; histoire des coucous &lt;/a&gt;.
@@ -86,18 +77,16 @@
         <li> le corps du texte : &lt; body &gt; corps du texte &lt; / body &gt;, qui va contenir le texte sémantique qui sera perçu par l'utilisateur futur (après transformation). </li>
       </ul>
       <p> Voici comment se présente le corps du document : </p>
-      <pre>
-        &lt; ! doctype html &gt;
-          &lt; html &gt;        
-            &lt; head &gt;
-              &lt; charset = "utf8" &gt;
-              &lt; title &gt; Titre du document &lt; /title &gt;
-            &lt; /head &gt;            
-            &lt; body &gt;
-              &lt; corps du texte &gt;
-            &lt; /body &gt;            
-          &lt; /html &gt;
-      </pre>
+      <p> &lt; ! doctype html &gt; </p>
+      <p> &lt; html &gt; </p>
+      <p> &lt; head &gt; </p>
+      <p> &lt; charset = "utf8" &gt; </p>
+      <p> &lt; title &gt; Titre du document &lt; / title &gt; </p>
+      <p> &lt; / head &gt; </p>
+      <p> &lt; body &gt; </p>
+      <p> &lt; corps du texte &gt; </p>
+      <p> &lt; / body &gt; </p>
+      <p> &lt; / html &gt; </p>
       <p> NB : la balise HTML contient donc 2 enfants qui sont la balise Head et la balise Body. </p>
       </section> 
       
@@ -106,7 +95,7 @@
       
       <section id = "titre">       
       <h2> Titres </h2>
-      <p> En HTML, il y a au maximum 6 niveaux de titres pour organiser sémantiquement un texte : </p>
+      <p> En HTML, il y a au maximum 6 niveaux de titres pour organiser sémantiquement un texte :
       <ul>
         <li> &lt;h1&gt; texte &lt; /h1&gt; : niveau 1 (les plus gros caractères) </li>
         <li> &lt;h2&gt; texte &lt; /h2&gt; : niveau 2 </li>
@@ -115,6 +104,7 @@
         <li> &lt;h5&gt; texte &lt; /h5&gt; : niveau 5 </li>
         <li> &lt;h6&gt; texte &lt; /h6&gt; : niveau 6 (les plus petits caractères) </li>
       </ul> 
+      </p>
       </section>
       
       <section id = "balise"> 
@@ -148,31 +138,11 @@
         <li> liste de définition </li>
       </ul>
       <p> La liste ordonnée est utilisée pour classifier des éléments. Elle permet de numéroter.</p>
-      <p> Voici comment la baliser : </p>
-      <pre>
-        &lt;ol&gt; 
-          &lt;li&gt; première ligne &lt;/li&gt; 
-          &lt;li&gt; deuxième ligne &lt;/li&gt; 
-          &lt;li&gt; x lignes &lt;/li&gt; 
-        &lt;/ol&gt;
-      </pre>
+      <p> Voici comment la baliser : &lt;ol&gt; &lt;li&gt; première ligne &lt;/li&gt; &lt;li&gt; deuxième ligne &lt;/li&gt; &lt;li&gt;x ligne &lt;/li&gt; &lt;/ol&gt;</p>
       <p> La liste désordonnée est utilisée pour lister des éléments en les puçant.</p>
-      <p> Voici comment la baliser : </p>
-      <pre>
-        &lt;ul&gt; 
-          &lt;li&gt; première ligne &lt;/li&gt; 
-          &lt;li&gt; deuxième ligne &lt;/li&gt; 
-          &lt;li&gt; x lignes &lt;/li&gt; 
-        &lt;/ul&gt;
-      </pre>
+      <p> Voici comment la baliser : &lt;ul&gt; &lt;li&gt; première ligne &lt;/li&gt; &lt;li&gt; deuxième ligne &lt;/li&gt; &lt;li&gt;x ligne &lt;/li&gt; &lt;/ul&gt;</p>
       <p> La liste de définition pour allier définition et terme défini </p>
-      <p> Voici comment la baliser : </p>
-      <pre>
-        &lt;dl&gt; 
-          &lt;dt&gt; terme1 &lt;/dt&gt; 
-          &lt;dd&gt; définition &lt;/dd&gt; 
-        &lt;/dl&gt;
-      </pre>
+      <p> Voici comment la baliser : &lt;dl&gt; &lt;dt&gt; terme1 &lt;/dt&gt; &lt;dd&gt; définition &lt;/dd&gt; &lt; &lt;/dl&gt;
       </section>
       
       <section id = "echappement">
@@ -182,8 +152,8 @@
       et non pas pour définir un code précis.
       Ainsi, certaines synthaxes sont à connaitre : </p>
       <ul>
-        <li> pour le chevron &lt; on écrira  &amp;lt;</li>
-        <li> pour le chevron &gt; on écrira  &amp;gt; </li>
+        <li> pour le chevron &lt; on écrira  &amplt;</li>
+        <li> pour le chevron &gt; on écrira  &ampgt; </li>
         <li> pour le caractère &amp; on écrira  &amp;amp; </li>
       </ul>
       </section>
@@ -204,13 +174,13 @@
         <li> &lt; header &gt; ... &lt; / header &gt; pour délimiter l'entête </li>
         <li> &lt; footer &gt; ... &lt; / footer &gt; pour délimiter le pied de page </li>
         <li> &lt; nav &gt; ... &lt; / nav &gt; pour délimiter la partie navigation </li>
-        <li> &lt; section &gt; ... &lt; / section &gt; ou &lt; article &gt; &lt; / article &gt; pour définir la partie texte. 
+        <li> &lt; section &gt; ... &lt; / section &gt; ou &lt; article &gt; &lt; / article &gt pour définir la partie texte. 
         La différence entre ces 2 balises dépend de la façon dont on conceptualise son site. Voici un site qui pourra vous expliciter ces 2 notions 
-          <a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" > click &lt;article&gt; </a>, 
-          <a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/section" > click &lt;section&gt; </a> </li>
+          <a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" > définition de &lt;article&gt; </a>, 
+          <a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/section" > définition de &lt;section&gt; </a> </li>
         <li> &lt; aside &gt; ... &lt; / aside &gt; pour définir l'aparté </li>
       </ul> 
-      <p> Il n'y a pas de limitation au nombre de chaque balise utilisée, tant qu'il y a du sens!
+      Il n'y a pas de limitation au nombre de chaque balise utilisée, tant qu'il y a du sens!
       De plus, rien n'empêche d'imbriquer un &lt;aside&gt; par exemple dans un &lt;article&gt; tant que l'information secondaire appartient à l'article et non au site!
       </p>
       </section>
@@ -222,53 +192,51 @@
       Cet élément, également appelé ancre, permet de définir un hyperlien vers un endroit différent situé sur la même page ou vers une autre page sur le Web.
       l'URL (Uniform Resource Locator) désigne une chaîne de caractères utilisée pour définir un chemin soit vers un endroit précis du Web ou sur un endroit précis de votre machine.
       Dans notre exemple, on trouve l'attribut href. Cet attribut permet d'indiquer la cible du lien.
-      Quelques points importants : </p>
+      Quelques points importants :
       <ul>
         <li> plus l'URL est court, mieux ce sera </li>
         <li> le texte explicatif du lien doit être précis </li>
         <li> si on renomme ou change un fichier définit par l'URL, il faut changer manuellement la valeur de cet URL. </li>
       </ul> 
+      </p>
       <p> Via cette balise d'ancrage, on va pouvoir construire un sommaire. 
       Cette construction se fait pas à pas, le tout est de bien indiquer les url des differents liens, les indentations pour la lisiblité, et les bonnes balises.
       L'ensemble sera borné par les balises &lt; nav &gt; ... &lt; / nav &gt;?</p>
-      <pre>
-        &lt; nav &gt; 
-          &lt; ol &gt;
-            &lt; li &gt;
-              &lt;a href = " # licorne" &gt; la vie des licornes &lt;/a&gt;
-            &lt; /li &gt;
-            &lt; li &gt;
-              &lt;a href = " page.html # lapin" &gt; Vive Pâques !! &lt;/a&gt; 
-            &lt; /li &gt;
-          &lt; ol &gt;   
-        &lt; /nav &gt;
-          ...
-        &lt; section id = "licorne" &gt; 
-          ... (corps de l'article)
-        &lt; /section &gt;
-        &lt; section id = "lapin" &gt; 
-          ... (corps de l'article)
-        &lt; /section &gt;
-      </pre>
+      <p> &lt; nav &gt; </p>
+        <p> &lt; ol &gt; </p>
+          <p> &lt; li &gt;  </p>
+            </p> &lt;a href = " # licorne" &gt; la vie des licornes &lt;/a&gt; </p>
+          <p> &lt; /li &gt; </p>
+          <p> &lt; li &gt;  </p>
+            </p> &lt;a href = " page.html # lapin" &gt; Vive Pâques !! &lt;/a&gt; </p>
+          <p> &lt; /li &gt; </p>
+        <p> &lt; ol &gt; </p>   
+      <p> &lt; nav &gt; </p>
+        <p> ... </p>
+      <p> &lt; section id = "licorne" &gt; 
+        <p> ... (corps de l'article) </p>
+      <p> &lt; /section &gt; </p>
+      <p> &lt; section id = "lapin" &gt; 
+        <p> ... (corps de l'article) </p>
+      <p> &lt; /section &gt; </p>
+      <p>    </p>
       <p> NB : l'attribut id DOIT être unique dans tout un document HTML, on appelle ça une contrainte. L'id doit être identifié de manière univoque. </p>
-      <p> NB2 : l'utilisation du dièse (#) avant un nom corrspond à un fragment d'URL, ce qui indique une cible interne au document (un ID).</p>
+      <p> NB2 : l'utilisation du dièse (#) avant un nom corrspond à un fragment d'URL, ce qui indique une cible interne au document (un ID).
       
       <p> Il existe un autre attribut que l'on peut ajouter à notre balise &lt; a &gt; : il s'agit de l'attribut target. 
       Target permet de définir l'ouvrerture de l'URL entrée en valeur dans l'attribut href. On peut trouver 4 valeurs pour l'attribut target ;</p>
       <ul>
         <li> _self = valeur par défaut (on peut ne rien écrire en valeur, c'est le même résultat) qui permet de charger la réponse dans le contexte de navigation courant. </li>
         <li> _blank = charge la réponse dans une nouvelle page </li>
-        <li> _parent = harge la réponse dans le &lt; frameset &gt; HTML4 parent de la frame courante ou dans le contexte de navigation HTML5 parent relativement au contexte courant). 
+        <li> _parent = harge la réponse dans le <frameset> HTML4 parent de la frame courante ou dans le contexte de navigation HTML5 parent relativement au contexte courant). 
         S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
         <li> _top = En HTML4 : charge la réponse dans la fenêtre originale, annulant toutes les autres frames. 
         En HTML5 : charge la réponse dans le contexte de navigation de plus haut niveau (c'est à dire, le contexte de navigation parent par rapport à l'actuel, 
         et qui n'a lui-même aucun parent). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
       </ul>
       <p> Voici ce que ça donne en texte HTML : </p>
-      <pre>
-        &lt; a  href = "URL"
-              target = "_blank" &gt; Vive Paques &lt; / a &gt;
-      </pre>
+      <p> &lt; a  href = "URL" </p>
+      <p>  target = "_blank" &gt; Vive Paques &lt; / a &gt; </p>
       </section>
       
       <section id = "image">
@@ -276,10 +244,8 @@
       <p> On va pouvoir insérer des images dans un texte HTML en utilsant une nouvelle balise : &lt; img &gt; </p>
       <p> Pour son utilisation, il faut obligatoirement utiliser 2 attibuts appelés src et alt.
       <p> Voici le texte pour importer une image : </p> 
-      <pre>
-        &lt; img  src = "URL de l'image"
-                  alt = "texte à afficher si l'image ne s'affiche pas" &gt;
-      </pre>
+      <p> &lt; img  src = "URL de l'image" </p>
+      <p>           alt = "texte à afficher si l'image ne s'affiche pas" &gt;
       </section>
       
       <section id = "tableau">
@@ -304,18 +270,16 @@
       </table> 
         
       <p> Et voici le texte HTML associé : </p>
-      <pre> 
-      &lt; table &gt;
-        &lt; tr &gt;
-          &lt; td &gt; A &lt; /td &gt;
-          &lt; td &gt; B &lt; /td &gt;
-        &lt; /tr &gt;
-        &lt; tr &gt;
-          &lt; td &gt; C &lt; /td &gt;
-          &lt; td &gt; D &lt; /td &gt;
-        &lt; /tr &gt;
-      &lt; /table &gt;
-      </pre>
+      <p> &lt; table &gt; </p>
+        <p> &lt; tr &gt; </p>
+          <p> &lt; td &gt; A &lt; /td &gt; </p>
+          <p> &lt; td &gt; B &lt; /td &gt; </p>
+        <p> &lt; /tr &gt; </p>
+        <p> &lt; tr &gt; </p>
+          <p> &lt; td &gt; C &lt; /td &gt; </p>
+          <p> &lt; td &gt; D &lt; /td &gt; </p>
+        <p> &lt; /tr &gt; </p>
+      <p> &lt; / table &gt; </p> 
       <p> Il est donc TRES important de respecter l'indentation car sinon le tableau devient très compliqué à déchiffrer, 
       surtout si on rajoute ultérieurement d'autres lignes ou cellules; </p> 
       <p> Il est également pssible de définir des entêtes et des pied de tableaux. On aura alors recours à trois autres balises :</p>
@@ -325,22 +289,20 @@
         <li> &lt; th &gt; ... &lt; /th &gt; chaque cellule dans la ligne thead ou tfoot cat th est utilisé pour les deux. </li>
       </ul>
       <p> Voici le texte HTML associé aux entêtes et pied de tableau: </p>
-      <pre> 
-        &lt; table &gt; 
-          &lt; thead &gt; 
-            &lt; tr &gt;
-              &lt; th &gt; nom &lt; /th &gt; 
-              &lt; th &gt; prénom &lt; /th &gt;
-            &lt;/tr &gt;
-          &lt; /thead &gt;
-          &lt; tfoot &gt;
-            &lt; tr &gt;
-              &lt; th &gt; ... &lt; /th &gt;
-              &lt; th &gt; ... &lt; /th &gt;
-            &lt;/tr &gt;  
-          &lt; /tfoot &gt;
-        &lt; / table &gt;
-      </pre>
+      <p> &lt; table &gt; </p>
+        <p> &lt; thead &gt; </p>
+          <tr>
+            <p> &lt; th &gt; nom &lt; /th &gt; </p>
+            <p> &lt; th &gt; prénom &lt; /th &gt; </p>
+          </tr>
+        <p> &lt; /thead &gt; </p>
+        <p> &lt; tfoot &gt; </p>
+          <tr>
+            <p> &lt; th &gt; ... &lt; /th &gt; </p>
+            <p> &lt; th &gt; ... &lt; /th &gt; </p>
+          </tr>  
+        <p> &lt; /tfoot &gt; </p>
+      <p> &lt; / table &gt; </p> 
       <p> Et voici le résultat final avec entêtes et pied de tableau
       <table>
         <thead>
@@ -390,49 +352,45 @@
         </tr>
       </table> 
       <p> ce qui s'écrit: </p>
-      <pre>
-        &lt;table&gt;        
-          &lt;tr&gt;
-            &lt; td rowspan = "2" 
-                 colspan = "2" &gt; A &lt;/td &gt;
-            &lt;td&gt; A &lt;/td&gt;
-            &lt;td&gt; A &lt;/td&gt;
-            &lt;td&gt; A &lt;/td&gt;
-          &lt;/tr&gt;          
-          &lt;tr&gt;
-            &lt;td&gt; C &lt;/td&gt;
-            &lt;td&gt; C &lt;/td&gt;
-            &lt;td&gt; C &lt;/td&gt;
-            &lt;td&gt; C &lt;/td&gt;
-          &lt;/tr&gt;          
-      &lt;/table&gt;
-      </pre>
+        </p> &lt;table&gt; </p>
+        </p> &lt;tr&gt; </p>
+          </p> &lt; td  rowspan = "2" 
+                        colspan = "2" > A &lt;/td &gt; </p>
+          </p> &lt;td&gt; A &lt;/td&gt; </p>
+          </p> &lt;td&gt; A &lt;/td&gt; </p>
+          </p> &lt;td&gt; A &lt;/td&gt; </p>
+        </p> &lt;/tr&gt; </p>
+        </p> &lt;tr&gt; </p>
+          </p> &lt;td&gt; C &lt;/td&gt; </p>
+          </p> &lt;td&gt; C &lt;/td&gt; </p>
+          </p> &lt;td&gt; C &lt;/td&gt; </p>
+          </p> &lt;td&gt; C &lt;/td&gt; </p>
+        </p> &lt;/tr&gt; </p>
+      </p> &lt;/table&gt; </p>
     
       <p> On peut insérer une légende dans un tableau. On ajoute alors la balise &lt; caption &gt; ... &lt; /caption &gt;. 
       Cette commande se place uniquement en première commande soit juste après la balise ouvrante &lt; table &gt; </p>
-      <pre>
-      &lt;table&gt;
-        &lt;caption&gt; ma légende &lt;/caption&gt;        
-          &lt; tr &gt;
-            &lt; td &gt; AAAA &lt; /td &gt;
-            &lt; td &gt; BBBB &lt; /td &gt;
-          &lt; /tr &gt;          
-          &lt; tr &gt;
-            &lt; td &gt; CCCC &lt; /td &gt;
-            &lt; td &gt; DDDD &lt; /td &gt;
-          &lt; /tr &gt;          
-        &lt; /table &gt; 
-      </pre>
-      
+      </p> &lt;table&gt; </p>
+        </p> &lt;caption&gt; ma légende &lt;/caption&gt; </p>
+          <p> &lt; tr &gt; </p>
+            <p> &lt; td &gt; A &lt; /td &gt; </p>
+            <p> &lt; td &gt; B &lt; /td &gt; </p>
+          <p> &lt; /tr &gt; </p>
+          <p> &lt; tr &gt; </p>
+            <p> &lt; td &gt; C &lt; /td &gt; </p>
+            <p> &lt; td &gt; D &lt; /td &gt; </p>
+          <p> &lt; /tr &gt; </p>
+        <p> &lt; / table &gt; </p> 
+        
       <table>
         <caption> ma légende </caption>
           <tr>
-            <td> AAAA </td >
-            <td> BBBB </td> 
+            <td> A </td >
+            <td> B </td> 
           </tr>
           <tr>
-            <td> CCCC </td >
-            <td> DDDD </td> 
+            <td> C </td >
+            <td> D </td> 
           </tr>
       </table> 
         
@@ -440,16 +398,13 @@
       <a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/colgroup" > click click click </a>. 
       Dans l'absolu, çela permet de définir un groupe de colonnes pour regrouper leurs informations dans un but sémantique MAIS ça ne sert plus à rien!
       </p>
-      <pre>
-        &lt;table&gt;
-          &lt;colgroup&gt;
-            &lt;col/&gt;
-            &lt;col span = "2" /&gt;
-          &lt;/colgroup&gt;
-            ...
-        &lt;/table&gt;
-      </pre>
-      
+      <p> &lt;table&gt; </p>
+        <p>&lt;colgroup&gt; </p>
+          <p>&lt;col/&gt; </p>
+          <p>&lt;col span = "2" /&gt; </p>
+        <p>&lt;/colgroup&gt; </p>
+      <p> ... <p>
+      <p>&lt;/table&gt;  </p>
       </section>
   
       </section>
