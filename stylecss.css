@@ -1,0 +1,26 @@
+.header{
+  background-color : rgb(148,255,249);
+  display : flex;
+  flex-flow : row wrap;
+  justify-content: space-around;
+  align-items : center;
+  width : 1500px;
+  height : 150px;
+}
+
+#tortue {
+  flex-basis: auto;
+  
+  }
+
+#site {
+  flex-basis : auto;
+  font-family : Snell Roundhand, cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: purple;
+  width:1300px;
+  heigth:150px;
+  text-align: center; 
+ }

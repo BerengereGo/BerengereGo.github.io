@@ -1,1 +1,197 @@
-fhjgjxfy
+<!doctype html>
+  <html>
+  
+    <head>
+        <meta charset = "utf-8">                             
+        <title> CSS pour les Zéros !! </title>  
+        <link rel = "stylesheet" type = "text/css" href = "stylecss.css"/> 
+    </head>
+    
+    <body>  
+
+      <header class = "header">
+        <img id = "tortue" src = "tortue.png"
+              alt = "Bien le bonjour de la tortue rigolote" > 
+        <h1 id = "site">  CSS pour les Zéros? Par ici ! </h1>
+      </header>
+      
+      <nav class = "sommaire" > 
+      <h2> Sommaire </h2> 
+        <ol> 
+          <li> <a href = "#debutons" > Principes de base </a> </li>
+          <li> <a href = "#display" > Le display </a> </li>
+          <li> <a href = "#classe" > Les classes et les id </a> </li>
+          <li> <a href = "#selecteur" > Les sélecteurs </a> </li>
+          <li> <a href = "#position" > Les positions </a> </li>
+          <li> <a href = "#flexbox" > Flexbox </a> </li>
+          <li> <a href = "#image" > Les images </a> </li>
+        </ol>
+      </nav>
+      
+      <p> Et voila le moment tant attendu par vous tous j'en suis certaine... on va rendre styler le HTML !! L'un des langage permettant cette magie est le CSS. 
+      Le CSS ou Cascade Style Sheet (également appelé feuilles de style) ne sert qu'à mettre en forme : positionnement, police, couleur...). 
+      Bien que certaines personnes dont je ne citerai pas le nom sous peine de représailles vous 
+      diront que c'est super simple, on va devoir s'accrocher un peu quand même. Si on se perd en cours de route, pas de panique, RESPIREZ !! Let's go !!</p>
+      <p> Une dernière info... il faudra écrire votre code CSS dans un nouveau fichier (extension.css), ce qui sous-entend de devoir créer un lien entre nos fichiers HTML et CSS. </p>
+      <p> Actuellement, nous en sommes à la version 3, qui apporte des fonctionnalités particulièrement attendues comme les bordures arrondies, les dégradés, les ombres... </p>
+      
+      <section id = "debutons"> 
+      <h2> Principes de base </h2>
+      <p> On va commencer par poser un fondement du CSS: la notion de boite ou Box. Ceci veut tout simplement dire que l'on va imbriquer des morceaux de code HTML dans des "boites" 
+      afin d'appliquer des styles dessus. Voici comment est représentée une Boite : 
+      <img src = "box.png" alt = "oh la belle box" > . Plusieurs parties sont à distinguer : </p>
+      <ul> 
+        <li> en bleu = taille réelle de la boite </li>
+        <li> padding = espace entre la boite et la bordure </li>
+        <li> border = bordure </li>
+        <li> margin = espace extérieur à la bordure </li>  
+      </ul>
+      <p> Notons que chaque parties est paramétrable. 
+      Ainsi, on aura par exemple margin : 1px 2px 3px 4px ; équivalent à on ajoute 1px (px = pixel) en haut, 2px à droite, 3px en bas et 4px à gauche de la bordure.
+      De même, on aura padding : 4px 3px 2px 1px pour on ajoute 4px en haut, 3px à droite, 2px en bas et 1px ) gauche de l'élément en bleu. 
+      Par convention, on nomme d'abord le haut puis on tourne dans le sens des aiguilles d'une montre.
+      Cependant, on peut également ne paramètrer qu'un seul des 4 paramètres, on le désignera alors spécifiquement : 
+      margin-top, margin-bottom, margin-left ou margin-right, idem pour padding. 
+      Mais on reverra tout ça ultérieurement. </p>
+      <p> Il existe deux balises de bases :</p>
+      <ul>
+        <li> &lt;div&gt; ... &lt;/div&gt;. Ceci est une boite de type BLOCK. Elle sert juste de conteneur à ce qui se trouve dedans. 
+        Elle crée simplement un nouveau bloc sans marges ni enrobement (padding)  </li>
+        <li> &lt;span&gt; ... &lt;/span&gt; Equivaut à div mais de typer LIGNE. Seule, elle n'a aucun effet sur le rendu du code html. 
+        Cependant, elle devient très utile lorsqu'on lui attribut des styles </li>
+      </ul>
+      <p> Voici des exemples d'autres balises HTML qui s'affichent naturellement en block : &lt; titre &gt; ; &lt; p &gt; ; &lt; ol &gt; ; &lt; table &gt; ...
+      Voici d'autres exemples de balises HTML qui s'affichent naturellement en inline : &lt; a &gt; ; &lt; table &gt;.
+      </p> L'objectif ultime est d'ajouter un minimun de code pour un maximum d'effet, sinon on a toujours le risque d'affecter sa maintenabilité.</p>
+      <p> Avant d'attaquer, voici comment on déclare le lien entre le doument HTML et le document CSS :</p>
+      <pre> 
+        &lt;head&gt;
+          &lt;link rel = "stylesheet" type = "text/css" href = "votredocument.css" /&gt;
+        &lt;/head&gt;
+      </pre>
+      <p> Un peu d'explications. Déja, le lien se stipule dans le &lt;head&gt;. Rappelons-nous que c'est LA zone réservée aux méta-données (avec le titre du document et utf-8).
+      Petite remarque en passant, la balise &lt;link/&gt;> est auto-fermante. Ensuite, on a besoin de 3 attributs: </p>
+      <ul>
+        <li> rel : indique la nature du lien, la valeur de l'attribut est donc "stylesheet" </li>
+        <li> type : ici "text/css" </li>
+        <li> href : indique où se trouve l'URL de mon fichier.css </li>
+      </ul>
+      <p> Schématiquement, une feuille de styles ressemble à ça: </p>
+      <pre>
+        balise1 {
+          propriete1: valeur1;
+          propriete2: valeur2;
+          propriete3: valeur3;
+          }
+
+        balise2 {
+          propriete1: valeur1;
+          propriete2: valeur2;
+          propriete3: valeur3;
+          propriete4: valeur4;
+          }
+
+        balise3 {
+          propriete1: valeur1;
+          }
+      </pre>
+      </section>
+      
+      <section = "display">
+      <h2> Le display </h2>
+      <p> La propriété CSS display est la plus importante pour contrôler la mise en page. 
+      Chaque élément à une valeur display par défaut dépendante du type de l'élément. 
+      Les valeurs par défaut de la plupart des éléments sont block ou inline. </p>   
+      </section>
+              
+      <section = "classe">
+      <h2> Les classes et les id </h2>
+      <p> L'utilisation des attributs classe et id permet de créer des ensembles auxquels on appliquera les mêmes paramètres. 
+      Il y a peu de différences entre ces 2 attributs, excepté que l'id ne sera utilsable qu'une et seule fois!
+      Il y a cependant des règles de priorités sur l'éxécution du css :</p>
+      <ul>
+        <li> propriétés id &gt; propriétés classe </li>
+        <li> propriétés classe &gt; propriétés élément </li>
+      </ul>
+      <p> Voici un exemple d'id et de classe ;</p>
+      <pre> &lt;header class = "header"&gt;
+              &lt;img id  = "tortue" src = "tortue.png"
+                                     alt = "Bien le bonjour de la tortue rigolote" &gt; 
+              &lt;h1 id = "site"&gt;  HTML pour les Zéros? Par ici ! &lt;/h1&gt;
+            &lt;/header&gt;
+      </pre>
+      <p> Ici, on a 3 boites. Une boite classe qui a pour valeur "header", et 2 boites id qui ont pour valeurs "tortue" et "site".
+      On pourra appliquer des propriétés générales dans la classe qui affecteront les enfants de cette classe, ici les id (boites dans la boite) 
+      puis appliquer des propriétés relatives à chaque id spécifiquement.      
+      </section>
+      
+      <section = "selecteur">
+      <h2> Les sélecteurs </h2>
+      <p> Pour rappel, un sélecteur permet d'appeler des éléments en HTML afin de leur attribuer des propriétés.
+      Nous avons déjà vu 3 types de sélecteurs qui sont l'élément ( ), la classe (.) et l'id (#). A cette liste on peut ajouter plusieurs.
+      Sélecteur de voisins immédiats + . Ex dd + dd : la règle s'applique à la définition suivie d'une définition : </p> 
+      <pre> 
+        dd + dd {
+          &lt;dl&gt; 
+            &lt;dt&gt; terme1 &lt;/dt&gt; 
+            &lt;dd&gt; définition &lt;/dd&gt;
+            &lt;dd&gt; définition2 &lt;/dd&gt;
+          &lt;/dl&gt; 
+          }
+      </pre>
+      <p> Sélecteur de voisins indirects ~ . Ex img ~ a : Les régles s'appliquent à l'image si elle est suivie d'une référence, même s'il y a d'autres éléments entre.</p>
+      <pre> 
+        img ~ a {
+          &lt;img&gt; img &lt;/img&gt;
+          &lt;div&gt; &lt;/div&gt;
+          &lt;p&gt; ... &lt;/p&gt;
+          &lt;a img  src = "URL de l'image"
+                     alt = "texte à afficher si l'image ne s'affiche pas" &gt; &lt;/a&gt;
+        }
+      </pre>
+      <p> Sélecteur d'un parent direct (où plutôt de l'enfant) &gt; . Ex div &gt; p : la règle s'applique à l'enfant p de div s'il le suit directement.</p>
+      <pre>
+        div &gt; p {
+        &lt;div&gt;
+        &lt;p&gt;
+        ...
+        &lt;/div&gt; 
+        }
+      </pre>
+      <p> Sélecteur parent indirect , même chose mais il peut y avoir des enfants entre div et p (div p). </p>
+      <p> Sélecteur universel * . Il sélectionne toutes les balises, sans exception.</p>
+      <p> sélecteur pour sélectionner un élément en fonction de la valeur de son attribut [] . Ex [class = "rouge"] : 
+      La règle s'applique à tout les éléments entre accolades ayant pour valeur "rouge"</p>
+      </section>
+      
+      <section = "position">
+      <h2> Les positions </h2>
+      <p>Pour attaquer les positions, il faut comprendre la notion ultra-complexe de flux... ordre dans lequel s'affiche les éléments dans la page! 
+      Pas si complexe en fait. Juste, ne pas oublier que ce sera soit des éléments en block 
+      (les uns en-dessous des autres) ou bien des éléments en ligne (les uns à la suite des autres sur la ligne). 
+      3 possibilités: </p> 
+      <ul>
+        <li> static : valeur par défaut du positionnement </li>
+        <li> absolute : on retire l'élément du flux, sa position se fait donc par rapport à son conteneur</li>
+        <li> relative : on définit la position d'un élément d'un flux à partir de sa position initiale qu'il aurait dû avoir </li>
+        <li> fixed : l'élément sera positionné et ne bougera plus lors du défilment de la page
+      </ul>
+      <p> 
+      </section>
+      
+      </section>
+      <section = "flexbox">
+      <h2> Les flexbox </h2>
+      <p> </p>
+      <p> Pour plus de renseignements sur flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" >clickouille </a></p>
+      
+      </section>
+      <section = "image">
+      <h2> Les images </h2>
+      <p> </p>
+      <p> Pour plus de renseignements sur flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" >clickouille </a></p>
+      
+      
+      
+    </body>
+  </html>
