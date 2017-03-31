@@ -29,25 +29,22 @@ body {
   text-align: center; 
   }
  
-flexbox1 {
+.flexbox1 {
   display : flex;
   justify-content: space-around;
   padding : 0px 10px 20px 10px;
   }
  
 .sommaire {
-  flex-basis: 30em;
+  flex-basis: 50em;
   font-size : 1.2em;
   }
   
- .texteentier {
-  flex-basis: 100em;  
+.texteentier {         /*flex-basis: 50em;  */
+  
   }
  
 .intro {
-  border: 3px solid rgb(25,18,232);
-  background-color: rgb(242,210,173);
-  border-radius: 50px;
   font-size : 1.2em; 
  }
  
@@ -71,8 +68,6 @@ flexbox1 {
  
 .footer {
   display: flex;
-  justify-content: space-around;
-  border: 3px solid rgb(25,18,232);
-  background-color: rgb(242,210,173);
+ 
   border-radius: 50px; 
   }

@@ -8,13 +8,12 @@
     </head>
     
     <body>  
-
       <header class = "header">
         <img src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue" > 
         <h1 id = "site">  CSS pour les Zéros? Par ici ! </h1>
       </header>
       
-      <flexbox1>                                <!-- creation flexbox pour facilitré le css ensuite -->
+      <div class = "flexbox1">                                <!-- creation flexbox pour facilitré le css ensuite -->
         <nav class = "sommaire miseenforme" > 
           <h2> Sommaire </h2> 
           <ol> 
@@ -108,14 +107,14 @@
               </pre>
             </section>
             
-            <section = "display">
+            <section id= "display">
               <h2> Le display </h2>
               <p> La propriété CSS display est la plus importante pour contrôler la mise en page. 
               Chaque élément à une valeur display par défaut dépendante du type de l'élément. 
               Les valeurs par défaut de la plupart des éléments sont block ou inline. </p>   
             </section>
                     
-            <section = "classe">
+            <section id="classe">
               <h2> Les classes et les id </h2>
               <p> L'utilisation des attributs classe et id permet de créer des ensembles auxquels on appliquera les mêmes paramètres. 
               Il y a peu de différences entre ces 2 attributs, excepté que l'id ne sera utilsable qu'une et seule fois!
@@ -136,7 +135,7 @@
               puis appliquer des propriétés relatives à chaque id spécifiquement.      
             </section>
             
-            <section = "selecteur">
+            <section id= "selecteur">
               <h2> Les sélecteurs </h2>
               <p> Pour rappel, un sélecteur permet d'appeler des éléments en HTML afin de leur attribuer des propriétés.
               Nous avons déjà vu 3 types de sélecteurs qui sont l'élément (nom de l'élément), la classe (.nom de la classe) et l'id (#nom de l'id). A cette liste on peut ajouter plusieurs.
@@ -169,7 +168,7 @@
               La règle s'applique à tout les éléments entre accolades ayant pour valeur "rouge"</p>
             </section>
             
-            <section = "position">
+            <section id= "position">
               <h2> Les positions </h2>
               <p>Pour attaquer les positions, il faut comprendre la notion ultra-complexe de flux... ordre dans lequel s'affiche les éléments dans la page! 
               Pas si complexe en fait. Juste, ne pas oublier que ce sera soit des éléments en block 
@@ -184,7 +183,7 @@
               <p> 
             </section>
             
-            <section = "flexbox">
+            <section id= "flexbox">
               <h2> Les flexbox </h2>
               <p>La flexbox c'est un truc magique pour la gestion de la mise en page qui vous facilitera la vie à condition de bien en comprendre le fonctionnement. </p>
               <p> L'idée de la flexbox est de donner au contenant la possibilité de redimentionner et modifier ses items pour mieux remplir la place disponible.</p>
@@ -231,7 +230,7 @@
               voici plus de renseignements sur la flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" > clickouille </a>.</p>              
             </section>
               
-            <section = "image">
+            <section id= "image">
               <h2> Les images </h2>
               <p> </p>
               <p> Pour plus de renseignements sur flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" >clickouille </a></p>
@@ -239,9 +238,9 @@
           </div>
           
         </div>
-      </flexbox1>
+      </div>
       
-      <footer class = "footer">
+      <footer class = "footer miseenforme">
       <p> Retour haut de page </p>
       <p> Retour page d'accueil </p>
       </footer> 

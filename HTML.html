@@ -9,19 +9,18 @@
     
     <body>  
       <header class = "header">
-        <img  src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue"> 
+        <img src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue"> 
         <h1 id = "site">  HTML pour les Zéros? Par ici ! </h1>
-      </header>
+      </header>      
       
-      
-      <flexbox1> 
+      <div class = "flexbox1"> 
         <nav class = "sommaire miseenforme" > 
           <h2> Sommaire </h2> 
           <ol> 
             <li> <a href = "#bienvenue" > Bienvenue en HTML </a> </li>
             <li> <a href = "#structure" > Structure d'un document HTML </a> </li>
-            <li> <a href = "#lebody" > Entrons dans le body </a> </li>
-              <ul>
+            <li> <a href = "#lebody" > Entrons dans le body </a> 
+              <ul> 
                 <li> <a href = "#titre" > Titre </a> </li>
                 <li> <a href = "#balise" > Vos premières balises </a> </li>
                 <li> <a href = "#interdit" > Balises interdites </a> </li>
@@ -32,7 +31,8 @@
                 <li> <a href = "#image" > Les images </a> </li>
                 <li> <a href = "#tableau" > Les tableaux </a> </li>
                 <li> <a href = "#formulaire" > Les formulaires </a> </li>
-              </ul>
+              </ul> 
+            </li>
           </ol>
         </nav>
         
@@ -568,7 +568,7 @@
                   &lt;/form&gt;  
                 &lt;/body&gt;
               </pre>
-              Un dernier point concernant un attribut très utile, qui va permettre une obligation de remplir un champ : l'attribut required. 
+              <p>Un dernier point concernant un attribut très utile, qui va permettre une obligation de remplir un champ : l'attribut required. 
               Cet attribut ne prendra aucune valeur. Ainsi, lorsque l'utilisateur voudra valider son formulaire et qu'il n'a pas renseigné un champ required, 
               un message apparaitra (selon navigateur, Chrome : "Veuillez renseigner ce champ"). </p>
               <pre>
@@ -579,9 +579,9 @@
             </section>
           </div>
         </div>  
-      </flexbox1>
+      </div>
       
-      <footer class = "footer">
+      <footer class = "footer miseenforme">
       <p> Retour haut de page </p>
       <p> Retour page d'accueil </p>
       </footer> 
