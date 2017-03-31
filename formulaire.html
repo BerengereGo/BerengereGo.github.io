@@ -1,0 +1,77 @@
+<!doctype html>
+  <html>
+  
+    <head>
+        <meta charset = "utf-8">                             
+        <title> FORMULAIRE </title>  
+        <link rel = "stylesheet" type = "text/css" href = "new1.css"/>
+        
+    </head>
+    
+    <body>    
+      <form action = "" methode = "post">  <!-- dans l'attribut action, on doit écrire l'URL vers laquelle on enverra les données -->
+        <label for = "name" > Nom : </label>
+        <input type = "text" name = "user-name" id = "name" required />
+       
+        <label for = "mail" > Mail : </label>
+        <input type = "mail" name = "user-mail" id = "mail" />
+        
+        <label for = "mail" > Commentaires : </label>
+        <textarea  type = "text" name = "user-commentaire" id = "commentaire" > </textarea>
+        
+        <button type = "submit"> Destruction massive de votre commentaire !!! </button>
+        <button type = "reset"> oups !! </button>
+        
+        
+        <label for = "choix" > Cochez </label>
+        <input type = "checkbox" />
+        
+        <fieldset>
+          <legend> Un groupe de puces </legend>
+          <label for = "oui" > Oui </label>
+          <input type = "radio" name = " choix" id = "oui" value = "oui" />
+          <label for = "non" > Non </label>
+          <input type = "radio" name = " choix" id = "non" value = "non" />
+          <label for = "peut-etre" > Peut-être </label>
+          <input type = "radio" name = " choix" id = "peut-etre" value = "peut-etre" />
+        </fieldset>
+        
+        <select name = "couleur">
+          <option value = "bleu"> bleu </option>
+          <option value = "vert"> vert </option>
+          <option value = "rouge"> rouge </option>
+          <option value = "bleu1"> bleu1 </option>
+          <option value = "vert1"> vert1 </option>
+          <option value = "rouge1"> rouge1 </option>
+        </select>
+        
+        <select name = "couleur" multiple>           <!-- attribut name renvoie sa valeur au serveur -->
+          <optgroup label = "couleur A">
+            <option value = "bleu"> bleu </option>
+            <option value = "vert"> vert </option>
+          </optgroup>
+          <optgroup label = "couleur B">
+            <option value = "rouge"> rouge </option>
+            <option value = "bleu1"> bleu1 </option>
+          </optgroup>
+          <optgroup label = "couleur C">
+            <option value = "vert1"> vert1 </option>
+            <option value = "rouge1"> rouge1 </option>
+          </optgroup>
+        </select>
+        
+        <label for = "date" > date de naissance </label>
+        <input type = "date" />
+        
+        <label for = "date2" > date de mariage </label>
+        <input type = "date" > </input>
+          
+      </form>
+      
+   
+      
+      
+      
+      
+    </body>
+  </html>

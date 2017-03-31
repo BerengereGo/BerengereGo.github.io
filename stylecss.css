@@ -1,16 +1,20 @@
+body {
+  background-color: rgb(152,91,20) ;
+  font-family : Arial Narrow;
+  font-size: 1em;
+  color: noir;
+}
+
 .header{
-  background-color : rgb(148,255,249);
+  background-color : rgb(242,210,173);
   display : flex;
   flex-flow : row wrap;
   justify-content: space-around;
-  align-items : center;
-  width : 1500px;
-  height : 150px;
+  align-items : center ;
 }
 
 #tortue {
   flex-basis: auto;
-  
   }
 
 #site {
@@ -23,4 +27,52 @@
   width:1300px;
   heigth:150px;
   text-align: center; 
+  }
+ 
+flexbox1 {
+  display : flex;
+  justify-content: space-around;
+  padding : 0px 10px 20px 10px;
+  }
+ 
+.sommaire {
+  flex-basis: 30em;
+  font-size : 1.2em;
+  }
+  
+ .texteentier {
+  flex-basis: 100em;  
+  }
+ 
+.intro {
+  border: 3px solid rgb(25,18,232);
+  background-color: rgb(242,210,173);
+  border-radius: 50px;
+  font-size : 1.2em; 
  }
+ 
+.flex2 {
+  display : flex;
+  justify-content: flex-start;
+}
+
+#margin {
+  padding-right : 60px;
+  padding-left : 60px;
+}
+
+.miseenforme {
+  border: 3px solid rgb(25,18,232);
+  background-color: rgb(242,210,173);
+  border-radius: 50px;
+  margin : 20px 20px 20px 20px;
+  padding : 20px 20px 20px 20px;
+}
+ 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid rgb(25,18,232);
+  background-color: rgb(242,210,173);
+  border-radius: 50px; 
+  }
