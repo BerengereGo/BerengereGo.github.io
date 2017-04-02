@@ -19,24 +19,24 @@
          
           <form action = "" methode = "post">
           
-            <div class = "nom">
+            <div class = "itemformu">
               <label for = "name" > Nom ou Pseudo: </label>
               <input type = "text" name = "user-name" id = "name" required />
             </div>
             
-            <div class = "adressemail">
+            <div class = "itemformu">
               <label for = "mail" > Mail : </label>
-              <input type = "mail" name = "user-mail" id = "mail" placeholder="Ex : xxx@mail.com" size="30" maxlength="10" required/>
+              <input type = "email" name = "user-mail" id = "mail" placeholder="Ex : xxx@mail.com" size="30" maxlength="10" required/>
             </div>
             
-            <div class = "comment">
+            <div class = "itemformu">
               <label for = "name" > Commentaires : </label>
-              <textarea  type = "text" name = "user-commentaires" id = "commentaire" ></textarea>
+              <textarea  name = "user-commentaires" id = "commentaire" maxlength = "250"></textarea>
             </div>
       
-            <div class = "age">
-              <label for = "Informations supplémentaires" > Age (réponse non-obligatoire mais fortement appréciée) : </label>
-              <select name = "Informations supplémentaires">           <!-- attribut name renvoie sa valeur au serveur -->
+            <div class = "itemformu">
+              <label for = "infosupplementaires" > Age (réponse non-obligatoire mais fortement appréciée) : </label>
+              <select name = "informations supplémentaires" id = "infosupplementaires">           <!-- attribut name renvoie sa valeur au serveur -->
                   <option value = "tranche1"> &lt; 20 ans </option>
                   <option value = "tranche2"> 21 à 35 ans </option>
                   <option value = "tranche3"> 35 à 50 ans </option>
@@ -44,7 +44,7 @@
               </select>
             </div>
             
-            <div class = "boucheoreille">
+            <div class = "itemformu">
               <fieldset>
                 <legend> Parlerez-vous de ce tuto? </legend>
                 <label for = "oui" > Oui </label>
@@ -56,7 +56,7 @@
               </fieldset>
             </div>
 
-            <div class = "envoireset">
+            <div class = "itemformu">
               <button type = "submit"> Let's go! </button>
               <button type = "reset"> Recommencer le formulaire </button>
             </div>

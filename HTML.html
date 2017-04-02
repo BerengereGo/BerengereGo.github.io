@@ -16,30 +16,57 @@
       
       <div id = "top"></div>
       <div class = "container1"> 
-        <nav class = "bandeaugauche format sommaire" >
-          <div id = "retoursommaire"></div>
-          <h2> Sommaire </h2> 
-          <ol> 
-            <li> <a href = "#bienvenue" > Bienvenue en HTML </a> </li>
-            <li> <a href = "#structure" > Structure d'un document HTML </a> </li>
-            <li> <a href = "#lebody" > Entrons dans le body </a> 
-              <ul> 
-                <li> <a href = "#titre" > Titres </a> </li>
-                <li> <a href = "#balise" > Vos premières balises </a> </li>
-                <li> <a href = "#interdit" > Balises interdites </a> </li>
-                <li> <a href = "#liste" > Les listes </a> </li>
-                <li> <a href = "#echappement" > Echappement en HTML </a> </li>
-                <li> <a href = "#pageweb" > Organisation HTML d'une page Web </a> </li>
-                <li> <a href = "#hyperlien" > Hyperliens </a> </li>
-                <li> <a href = "#image" > Les images </a> </li>
-                <li> <a href = "#tableau" > Les tableaux </a> </li>
-                <li> <a href = "#formulaire" > Les formulaires </a> </li>
-              </ul> 
-            </li>
-          </ol>
-        </nav>
+        <div class = "bandeaugauche format">
+          <nav class = "sommaire" >
+            <div id = "retoursommaire"></div>
+            <h2> Sommaire </h2> 
+            <ol> 
+              <li> <a href = "#bienvenue" > Bienvenue en HTML </a> </li>
+              <li> <a href = "#structure" > Structure d'un document HTML </a> </li>
+              <li> <a href = "#lebody" > Entrons dans le body </a> 
+                <ul> 
+                  <li> <a href = "#titre" > Titres </a> </li>
+                  <li> <a href = "#balise" > Vos premières balises </a> </li>
+                  <li> <a href = "#interdit" > Balises interdites </a> </li>
+                  <li> <a href = "#liste" > Les listes </a> </li>
+                  <li> <a href = "#echappement" > Echappement en HTML </a> </li>
+                  <li> <a href = "#pageweb" > Organisation HTML d'une page Web </a> </li>
+                  <li> <a href = "#hyperlien" > Hyperliens </a> </li>
+                  <li> <a href = "#image" > Les images </a> </li>
+                  <li> <a href = "#tableau" > Les tableaux </a> </li>
+                  <li> <a href = "#formulaire" > Les formulaires </a> </li>
+                </ul> 
+              </li>
+            </ol>
+          </nav>
+          
+          <div class = "sommaire">
+            <h2> Liens utiles ! </h2>
+            <p> <a href = "https://developer.mozilla.org/fr/"> Mozilla Developper Network </a> </p>
+            <p> <a href = "http://caniuse.com/"> caniuse.com </a> </p>
+            <p> <a href = "https://openclassrooms.com"> OpenClassrooms </a> </p>
+          </div>
+          
+          <div class = "sommaire">
+            <h2> Sites du Développeur </h2>
+            <p> Dans cet item, retrouver des sites incontournables pour le futur développeur que vous êtes </p>
+            <p> <a href = "https://www.w3.org/"> Site du W3C </a> </p>
+            <p> <a href = "https://validator.nu/"> Validateur de code </a> </p>
+            <p> <a href = "https://validator.w3.org/"> Validateur de code du W3C </a> </p>
+            <p> <a href = "https://github.com/"> Github, service en ligne pour héberger ses repositories de code </a> </p>
+          </div>
+          
+          <div class = "sommaire">
+            <h2> Logiciels </h2>
+            <p> Dans cet item, retrouver des logiciels incontournables pour le futur développeur que vous êtes </p>
+            <p> NotePad++ : idéal pour rédiger ses codes. </p>
+            <p> Git : pour gérer ses codes source. </p>
+          </div>
+          
+          <img src = "lapin3.png" alt = "Bien le bonjour" id = "lapin3">
+        </div>
         
-        <div class = "container3"> <!-- changer le nom des box-->
+        <div class = "container3"> 
           <div class = "intro format">
             <p> Avant toutes choses, il est important de poser cette première idée : 
             le langage HTML (HyperText Markup Language) est un langage de description de données et NON de programmation !!
@@ -569,9 +596,9 @@
                       &lt;option value = "rouge1"> rouge1 &lt;/option&gt;
                     &lt;/select&gt;
                     
-                    &lt;select name = "couleur" multiple&lt;            &lt;!-- attribut name renvoie sa valeur au serveur --&gt;
+                    &lt;select name = "couleur" multiple&lt;           
                       &lt;optgroup label = "couleur A"&lt;
-                        &lt;option value = "bleu"> bleu &lt;/option&gt;    &lt;!-- Menu choix multiple avec regroupement des options--&gt;
+                        &lt;option value = "bleu"> bleu &lt;/option&gt;    &lt;!-- regroupement des options--&gt;
                         &lt;option value = "vert"> vert &lt;/option&gt;    
                       &lt;/optgroup&gt;
                       &lt;optgroup label = "couleur B"&gt;
