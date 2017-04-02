@@ -1,0 +1,72 @@
+<!doctype html>
+  <html>
+  
+    <head>
+        <meta charset = "utf-8">                             
+        <title> CSS pour les Zéros !! </title>  
+        <link rel = "stylesheet" type = "text/css" href = "stylesite.css"/> 
+    </head>
+    
+    <body>  
+      <header class = "header">
+        <img src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue" > 
+        <h1>  Avant de Partir... </h1>
+        <img src = "lapin.png" alt = "Bien le bonjour du lapin" id = "lapin">
+      </header>
+      
+      <div class = "container5">
+        <div class = "container4">
+         
+          <form action = "" methode = "post">
+          
+            <div class = "nom">
+              <label for = "name" > Nom ou Pseudo: </label>
+              <input type = "text" name = "user-name" id = "name" required />
+            </div>
+            
+            <div class = "adressemail">
+              <label for = "mail" > Mail : </label>
+              <input type = "mail" name = "user-mail" id = "mail" placeholder="Ex : xxx@mail.com" size="30" maxlength="10" required/>
+            </div>
+            
+            <div class = "comment">
+              <label for = "name" > Commentaires : </label>
+              <textarea  type = "text" name = "user-commentaires" id = "commentaire" ></textarea>
+            </div>
+      
+            <div class = "age">
+              <label for = "Informations supplémentaires" > Age (réponse non-obligatoire mais fortement appréciée) : </label>
+              <select name = "Informations supplémentaires">           <!-- attribut name renvoie sa valeur au serveur -->
+                  <option value = "tranche1"> &lt; 20 ans </option>
+                  <option value = "tranche2"> 21 à 35 ans </option>
+                  <option value = "tranche3"> 35 à 50 ans </option>
+                  <option value = "tranche4"> &gt; 50 ans </option>
+              </select>
+            </div>
+            
+            <div class = "boucheoreille">
+              <fieldset>
+                <legend> Parlerez-vous de ce tuto? </legend>
+                <label for = "oui" > Oui </label>
+                <input type = "radio" name = " choix" id = "oui" value = "oui" />
+                <label for = "non" > Non </label>
+                <input type = "radio" name = " choix" id = "non" value = "non" />
+                <label for = "peut-etre" > Peut-être </label>
+                <input type = "radio" name = " choix" id = "peut-etre" value = "peut-etre" />
+              </fieldset>
+            </div>
+
+            <div class = "envoireset">
+              <button type = "submit"> Let's go! </button>
+              <button type = "reset"> Recommencer le formulaire </button>
+            </div>
+          </form>
+        </div>
+        
+        <footer class = "footer format">        
+          <a href = "index.html" class= "direction pied"> Retourner à la page d'accueil </a>
+          
+        </footer> 
+      </div>
+    </body>
+  </html>

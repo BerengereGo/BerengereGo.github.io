@@ -1,0 +1,124 @@
+body  {
+  font-family : Snell Roundhand, cursive;
+  font-size: 1em;
+  color: noir;
+  background-color: rgb(96,123,139);
+}
+
+.header {
+  display : flex;
+  justify-content: flex-start;
+  align-items : center ;
+  background-color: white;
+  margin-bottom: 30px;
+}
+ 
+h1 {
+  flex-basis: auto;
+  font-family : Snell Roundhand, cursive;  
+  font-size: 2.5em;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; 
+  margin: auto;
+}
+
+.format {
+  background-color: white;
+  margin : 10px 10px 10px 10px;
+  padding : 10px 20px 10px 20px;
+  text-align: justify;
+  border-radius: 20px;
+  }
+
+.container1{
+  display : flex;
+  justify-content: space-around;
+}
+
+.sommaire{
+  width: 25%;
+  padding: 20px 20px 20px 20px;
+}
+
+.container2{
+  display : flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.container3{
+  display : flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.bienvenue {
+  width: 55%;
+  font-size: 1.2em;
+  padding: 150px 50px 50px 50px;
+}
+
+.flex3 {
+  display : flex;
+  flex-direction: column;
+  }
+
+.direction{ 
+  background-color: orange;
+  width: auto;
+  text-align: center ;
+  margin-left: 50px;
+  margin-right:50px;
+  border-radius: 20px;
+}
+.pied {
+ padding-left: 50px;
+ padding-right: 50px;
+}
+.format {
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+h2 {  
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+}
+.direction:hover {
+  background-color: yellow;
+}
+.footer {
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
+  }
+  
+.flex2 {
+  display : flex;
+  justify-content: flex-start;
+  }
+
+#margin {
+  padding-right : 60px;
+  padding-left : 60px;
+  }
+  
+.container4 {
+  display : flex;  
+  flex-direction: column; 
+  }
+  
+.container5 {
+  display : flex;
+  flex-direction: column;
+  background-color: white;   
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  align-items: center;
+  width: 40%;
+} 

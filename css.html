@@ -4,17 +4,19 @@
     <head>
         <meta charset = "utf-8">                             
         <title> CSS pour les Zéros !! </title>  
-        <link rel = "stylesheet" type = "text/css" href = "stylecss.css"/> 
+        <link rel = "stylesheet" type = "text/css" href = "stylesite.css"/> 
     </head>
     
     <body>  
       <header class = "header">
         <img src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue" > 
-        <h1 id = "site">  CSS pour les Zéros? Par ici ! </h1>
+        <h1>  CSS pour les Zéros? Par ici ! </h1>
+        <img src = "lapin.png" alt = "Bien le bonjour du lapin" id = "lapin">
       </header>
       
-      <div class = "flexbox1">                                <!-- creation flexbox pour facilitré le css ensuite -->
-        <nav class = "sommaire miseenforme" > 
+      <div id = "top"></div>
+      <div class = "container1">                                <!-- creation flexbox pour facilité le CSS ensuite -->
+        <nav class = "bandeaugauche format sommaire" > 
           <h2> Sommaire </h2> 
           <ol> 
             <li> <a href = "#debutons" > Principes de base </a> </li>
@@ -27,8 +29,8 @@
           </ol>
         </nav>
         
-        <div class = "texte-entier">
-          <div class = "intro miseenforme">
+        <div class = "container3">
+          <div class = "intro format">
             <p> Et voila le moment tant attendu par vous tous j'en suis certaine... on va rendre styler le HTML !! L'un des langage permettant cette magie est le CSS. 
             Le CSS ou Cascade Style Sheet (également appelé feuilles de style) ne sert qu'à mettre en forme : positionnement, police, couleur...). 
             Bien que certaines personnes dont je ne citerai pas le nom sous peine de représailles vous 
@@ -37,7 +39,7 @@
             <p> Actuellement, nous en sommes à la version 3, qui apporte des fonctionnalités particulièrement attendues comme les bordures arrondies, les dégradés, les ombres... </p>
           </div>
           
-          <div class = "texte miseenforme">
+          <div class = "format">
             <section id = "debutons"> 
               <h2> Principes de base </h2>
               <p> On va commencer par poser un fondement du CSS: la notion de boite ou Box. Ceci veut tout simplement dire que l'on va imbriquer des morceaux de code HTML dans des "boites" 
@@ -240,9 +242,10 @@
         </div>
       </div>
       
-      <footer class = "footer miseenforme">
-      <p> Retour haut de page </p>
-      <p> Retour page d'accueil </p>
+      <footer class = "footer format">
+        <a href = "#top" class= "direction pied"> Retourner en haut </a>
+        <a href = "index.html" class= "direction pied"> Retourner à la page d'accueil </a>
+        <a href = "hTML.html" class= "direction pied"> Revenir à la page HTML </a>
       </footer> 
       
     </body>

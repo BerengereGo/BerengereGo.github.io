@@ -4,19 +4,48 @@
     <head>
         <meta charset = "utf-8">                             
         <title> Création d'un site WEB pour les Zéros !! </title>  
-        <link rel = "stylesheet" type = "text/css" href = "stylecss.css"/> 
+        <link rel = "stylesheet" type = "text/css" href = "stylesite.css"/> 
     </head>
     
     <body>    
-      <header class = "header">
-        <img id = "tortue" src = "tortue.png"
-              alt = "Bien le bonjour de la tortue rigolote" > 
-        <h1 id = "site">  Premier pas pour la création d'un site pour les Zéros? </h1>
+      <header class = "header">        
+        <img src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue"> 
+        <h1> B. A.-BA POUR LA CREA D'UN SITE WEB ! </h1>
+        <img src = "lapin.png" alt = "Bien le bonjour du lapin" id = "lapin">         
       </header>
       
-      <a href = "HTML.html" > click &lt;lien vers page html&gt; </a>, 
-      <a href = "css.html" > click &lt;lien vers page css&gt; </a>, 
-      
-      
+      <div class = "container1">
+        <div class = "bienvenue format">
+        <h2> Bienvenue ! </h2>
+        <p> Bienvenue à tous les Zéros en création de sites Web et qui ne veulent plus en rester là! 
+        Dans ce site, vous pourrez trouver les bases de 2 langages incontournables en matière de site Web : le HTML et le CSS.
+        Avant toutes choses, brève présentation de moi-même à vous tous : j'ai appris les bases de ces 2 langages il y a... 
+        moins d'une semaine (à l'écriture de ce paragraphe)! Mon secret : un bon prof, beaucoup d'envie, beaucoup de recherche sur le net 
+        et et finalement beaucoup de satisfaction ! </p>
+        <p>Suivez le guide et ENJOY !! </p>
+        </div>
+        
+        <div class = "container2">        
+          
+            <div class = "vershtml format flex3">
+              <h2> HTML pour les Zéros ! </h2>
+              <p> Pour bien commencer, apprenons le premier langage indispensable pour poser les bases de la création d'un site Web : le HTML. </p>
+              <a href = "HTML.html" class = "direction" > Par ici! </a>
+            </div>  
+          
+            <div class = "verscss format flex3">
+              <h2> CSS pour les Zéros ! </h2>
+              <p> Pour bien continuer, apprenons un langage de folie pour l'esthétisme d'un site web : le CSS. </p>
+              <a href = "css.html" class = "direction"> Par ici! </a>       
+            </div>          
+         
+            <div class = "versformulaire format flex3">
+              <h2> Contact ! </h2>
+              <p> Par ici, petit espace de vous à moi pour toutes remarques, commentaires, questions... </p>
+              <a href="formu.html" class = "direction" >Formulaire de Contact</a>           
+            </div>
+        </div>
+      </div>
+           
     </body>
   </html>

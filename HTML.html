@@ -4,24 +4,27 @@
     <head>
         <meta charset = "utf-8">                             
         <title> HTML pour les Zéros !! </title>  
-        <link rel = "stylesheet" type = "text/css" href = "stylecss.css"/> 
+        <link rel = "stylesheet" type = "text/css" href = "stylesite.css"/> 
     </head>
     
     <body>  
       <header class = "header">
         <img src = "tortue.png" alt = "Bien le bonjour de la tortue rigolote" id = "tortue"> 
-        <h1 id = "site">  HTML pour les Zéros? Par ici ! </h1>
+        <h1>  HTML pour les Zéros? Par ici ! </h1>
+        <img src = "lapin.png" alt = "Bien le bonjour du lapin" id = "lapin">
       </header>      
       
-      <div class = "flexbox1"> 
-        <nav class = "sommaire miseenforme" >
+      <div id = "top"></div>
+      <div class = "container1"> 
+        <nav class = "bandeaugauche format sommaire" >
+          <div id = "retoursommaire"></div>
           <h2> Sommaire </h2> 
           <ol> 
             <li> <a href = "#bienvenue" > Bienvenue en HTML </a> </li>
             <li> <a href = "#structure" > Structure d'un document HTML </a> </li>
             <li> <a href = "#lebody" > Entrons dans le body </a> 
               <ul> 
-                <li> <a href = "#titre" > Titre </a> </li>
+                <li> <a href = "#titre" > Titres </a> </li>
                 <li> <a href = "#balise" > Vos premières balises </a> </li>
                 <li> <a href = "#interdit" > Balises interdites </a> </li>
                 <li> <a href = "#liste" > Les listes </a> </li>
@@ -36,19 +39,18 @@
           </ol>
         </nav>
         
-        <div class = "texte-entier">
-          <div class = "intro miseenforme">
+        <div class = "container3"> <!-- changer le nom des box-->
+          <div class = "intro format">
             <p> Avant toutes choses, il est important de poser cette première idée : 
             le langage HTML (HyperText Markup Language) est un langage de description de données et NON de programmation !!
             Ce langage permet donc de structurer des données tel que du texte mais également des données vidéo, audio... . C'est la base du développement d'un site Web qui donne son SENS.
             En parallèle, il existe un autre langage, le CSS (Cascading Style Sheets) qui est un langage utilisé pour la forme, nous reviendrons sur ce langage plus tard, 
-            chaque chose en son temps (pour une bref introduction du CSS, 
-            <a href = "css.html"> cliquer ici </a>. </p>
+            chaque chose en son temps.</p>
             <p> Tout document HTML DOIT être unique ! </p>
             <p> Règle d'or d'écriture : bien incrémenter son texte pour lisibilité, et pour soi, et pour les copains amenés potentiellement à relire votre HTML par la suite. </p> 
           </div>
         
-          <div class = "texte miseenforme">
+          <div class = "format">
             <section id = "structure"> 
               <h2> Structure d'un document HTML </h2>
               <p> Le point de départ du langage HTML repose sur l'utilisation de balises (d'où son nom "Markup Language"), les balises seront délimitées par des chevrons : &lt; ... &gt;. 
@@ -99,10 +101,11 @@
                   &lt; /html &gt;
               </pre>
               <p> NB : la balise HTML contient donc 2 enfants qui sont la balise Head et la balise Body. </p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section> 
             
             
-            <h2>  Entrons dans le Body </h2>
+            <h2 id="lebody">  Entrons dans le Body </h2>
             
             <section id = "titre">       
               <h3> Titres </h3>
@@ -115,6 +118,7 @@
                 <li> &lt;h5&gt; texte &lt; /h5&gt; : niveau 5 </li>
                 <li> &lt;h6&gt; texte &lt; /h6&gt; : niveau 6 (les plus petits caractères) </li>
               </ul> 
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id = "balise"> 
@@ -127,6 +131,7 @@
               <p> NB : les 3 dernières balises sont uniquement pour mettre en valeur la sémantique !! pas de mise forme !! </p>
               <p> NB2 : Dans toute règle il y a une exception: la balise &lt; pre &gt;. Cette balise est du type block et est la seule à avoir un impact sur la présentation, 
               ce qui sous-entend implicitement que cette présentation a du sens! </p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
              
             <section id = "interdit">
@@ -137,6 +142,7 @@
                 <li> saut de ligne &lt; br &gt;. </li>
                 <li> trait horizontal &lt; hr &gt; </li>
               </ul>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id = "liste">
@@ -173,6 +179,7 @@
                   &lt;dd&gt; définition &lt;/dd&gt; 
                 &lt;/dl&gt;
               </pre>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
               </section>
               
               <section id = "echappement">
@@ -186,6 +193,7 @@
                   <li> pour le chevron &gt; on écrira  &amp;gt; </li>
                   <li> pour le caractère &amp; on écrira  &amp;amp; </li>
                 </ul>
+                <a href = "#retoursommaire" > Retour au sommaire </a>
               </section>
             
             <section id = "pageweb">
@@ -213,6 +221,7 @@
               <p> Il n'y a pas de limitation au nombre de chaque balise utilisée, tant qu'il y a du sens!
               De plus, rien n'empêche d'imbriquer un &lt;aside&gt; par exemple dans un &lt;article&gt; tant que l'information secondaire appartient à l'article et non au site!
               </p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id = "hyperlien">
@@ -269,6 +278,7 @@
                 &lt; a  href = "URL"
                       target = "_blank" &gt; Vive Paques &lt; / a &gt;
               </pre>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
               
             <section id = "image">
@@ -280,6 +290,7 @@
                 &lt; img  src = "URL de l'image"
                           alt = "texte à afficher si l'image ne s'affiche pas" &gt;
               </pre>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id = "tableau">
@@ -452,7 +463,7 @@
                     ...
                 &lt;/table&gt;
               </pre>
-            
+              <a href = "#retoursommaire" > Retour au sommaire </a>            
             </section>
             
             <section id = "formulaire">
@@ -483,7 +494,7 @@
               <img src = "champ1.png" alt = "voici vos premiers champs" > 
               <pre>
                 &lt;body&gt;    
-                  &lt;form action = "" methode = "post"&gt;                         &lt;!-- dans l'attribut action, on doit écrire l'URL vers laquelle on enverra les données --&gt;
+                  &lt;form action = "" methode = "post"&gt;                         
                     &lt;label for = "name" &gt; Nom : &lt;/label&gt;                        
                     &lt;input type = "text" name = "user-name" id = "name" /&gt;
                
@@ -516,7 +527,8 @@
                 &lt;label for = "choix" &gt; Cochez &lt;/label&gt;
                 &lt;input type = "checkbox" /&gt;
               </pre>
-              <p> Voici le code HTML pour les ronds avec choix mutuellement exclusifs ayant pour résultat : <img src = "champradio.png" alt = "voici vos premiers champs radio"> </p>
+              <p> Voici le code HTML pour les ronds avec choix mutuellement exclusifs ayant pour résultat : </p>
+              <img src = "champradio.png" alt = "voici vos premiers champs radio"> 
               <pre>
                 &lt;label for = "oui" &gt; Oui &lt;/label&gt;
                 &lt;input type = "radio" name = " choix" id = "oui" value = "oui" /&gt;
@@ -525,7 +537,8 @@
                 &lt;label for = "peut-etre" &gt; Peut-être &lt;/label&gt;
                 &lt;input type = "radio" name = " choix" id = "peut-etre" value = "peut-etre" /&gt;
               </pre>
-              <p> Notons qu'on pourra ajouter une légende à nos puces via la balise &lt;legend&gt;, les organiser via la balise &lt;fieldset&gt;. Voici l'ensemble du code, testez-le :</p>
+              <p> Notons qu'on pourra ajouter une légende à nos puces via la balise &lt;legend&gt;, 
+              les organiser via la balise &lt;fieldset&gt;. Voici l'ensemble du code, testez-le :</p>
               <pre>
                 &lt;fieldset&gt;
                   &lt;legend&gt; Un groupe de puces &lt;/legend&gt;
@@ -541,11 +554,12 @@
               <p> Dernier point, les menus déroulants. Devinez quoi... il existe aussi une balise pour les menus déroulants, qui sera &lt;select&gt;! 
               Elle prendra un attribut qui est name = "...".
               Dans cette balise on imbriquera une autre balise qui sera &lt;option&gt;, on aura une &lt;option&gt; par choix. Cette dernière aura 1 attribut : value = "...". 
-              Enfin, on pourra aussi regrouper des options via la balise &lt;optgroup&gt; qui prendra pour attribut label = "...". Voici l'ensemble du code sur les menus déroulants 
-              <img src = "champmenu.png" alt = "oh les beaux menus"> : </p>
+              Enfin, on pourra aussi regrouper des options via la balise &lt;optgroup&gt; qui prendra pour attribut label = "...". 
+              Voici l'ensemble du code sur les menus déroulants : </p>
+              <img src = "champmenu.png" alt = "oh les beaux menus">  
               <pre>
                 &lt;body>    
-                  &lt;form action = "" methode = "post"&gt;             &lt;!-- dans l'attribut action, on doit écrire l'URL vers laquelle on enverra les données --&gt;  
+                  &lt;form action = "" methode = "post"&gt;            
                     &lt;select name = "couleur"&gt;
                       &lt;option value = "bleu"&gt; bleu &lt;/option&gt;      &lt;!-- menu déroulant simple--&gt;
                       &lt;option value = "vert"> vert &lt;/option&gt;
@@ -575,15 +589,17 @@
                 &lt;label for = "name" &gt; Nom : &lt;/label&gt;
                 &lt;input type = "text" name = "user-name" id = "name" required /&gt;
               </pre>
-              <p> Voila pour la part HTML, donc sémantique !! On se revoit dans la partie CSS pour rendre notre formulaire au top de sa présentation ! </p>
+              <p> Voila pour la partie HTML, donc sémantique !! On se revoit dans la partie CSS pour rendre notre formulaire au top de sa présentation ! </p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
           </div>
         </div>  
       </div>
       
-      <footer class = "footer miseenforme">
-        <p> Retour haut de page </p>
-        <p> Retour page d'accueil </p>
+      <footer class = "footer format">
+        <a href = "#top" class= "direction pied"> Retourner en haut </a>
+        <a href = "index.html" class= "direction pied"> Retourner à la page d'accueil </a>
+        <a href = "css.html" class= "direction pied"> Aller à la page CSS </a>
       </footer> 
     
     </body>
