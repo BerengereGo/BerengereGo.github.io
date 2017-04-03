@@ -16,18 +16,47 @@
       
       <div id = "top"></div>
       <div class = "container1">                                <!-- creation flexbox pour facilité le CSS ensuite -->
-        <nav class = "bandeaugauche format sommaire" > 
-          <h2> Sommaire </h2> 
-          <ol> 
-            <li> <a href = "#debutons" > Principes de base </a> </li>
-            <li> <a href = "#display" > Le display </a> </li>
-            <li> <a href = "#classe" > Les classes et les id </a> </li>
-            <li> <a href = "#selecteur" > Les sélecteurs </a> </li>
-            <li> <a href = "#position" > Les positions </a> </li>
-            <li> <a href = "#flexbox" > Flexbox </a> </li>
-            <li> <a href = "#image" > Les images </a> </li>
-          </ol>
-        </nav>
+        <div class = "bandeaugauche format">
+          <div id = "retoursommaire"></div>
+          <nav class = "sommaire"> 
+            <h2> Sommaire </h2> 
+            <ol> 
+              <li> <a href = "#debutons" > Principes de base </a> </li>
+              <li> <a href = "#display" > Le display </a> </li>
+              <li> <a href = "#classe" > Les classes et les id </a> </li>
+              <li> <a href = "#selecteur" > Les sélecteurs </a> </li>
+              <li> <a href = "#position" > Les positions </a> </li>
+              <li> <a href = "#flexbox" > Flexbox </a> </li>
+              <li> <a href = "#gadget" > Les gadgets </a> </li>
+            </ol>
+          </nav>
+          
+          <div class = "sommaire">
+            <h2> Liens utiles ! </h2>
+            <p> <a href = "https://developer.mozilla.org/fr/"> Mozilla Developper Network </a> </p>
+            <p> <a href = "http://caniuse.com/"> caniuse.com </a> </p>
+            <p> <a href = "https://openclassrooms.com/"> OpenClassrooms </a> </p>
+          </div>
+          
+          <div class = "sommaire">
+            <h2> Sites du Développeur </h2>
+            <p> Dans cet item, retrouver des sites incontournables pour le futur développeur que vous êtes </p>
+            <p> <a href = "https://www.w3.org/"> Site du W3C </a> </p>
+            <p> <a href = "https://validator.nu/"> Validateur de code </a> </p>
+            <p> <a href = "https://validator.w3.org/"> Validateur de code du W3C </a> </p>
+            <p> <a href = "https://github.com/"> Github, service en ligne pour héberger ses repositories de code </a> </p>
+          </div>
+          
+          <div class = "sommaire">
+            <h2> Logiciels </h2>
+            <p> Dans cet item, retrouver des logiciels incontournables pour le futur développeur que vous êtes </p>
+            <p> NotePad++ : idéal pour rédiger ses codes. </p>
+            <p> Git : pour gérer ses codes source. </p>
+          </div>
+          
+          <img src = "lapin3.png" alt = "Bien le bonjour" id = "lapin3">
+          
+        </div>
         
         <div class = "container3">
           <div class = "intro format">
@@ -73,8 +102,8 @@
                 Cependant, elle devient très utile lorsqu'on lui attribut des styles </li>
               </ul>
               <p> Voici des exemples d'autres balises HTML qui s'affichent naturellement en block : &lt; titre &gt; ; &lt; p &gt; ; &lt; ol &gt; ; &lt; table &gt; ...
-              Voici d'autres exemples de balises HTML qui s'affichent naturellement en inline : &lt; a &gt; ; &lt; table &gt;.
-              </p> L'objectif ultime est d'ajouter un minimun de code pour un maximum d'effet, sinon on a toujours le risque d'affecter sa maintenabilité.</p>
+              Voici d'autres exemples de balises HTML qui s'affichent naturellement en inline : &lt; a &gt; ; &lt; table &gt;. </p>
+              <p> L'objectif ultime est d'ajouter un minimun de code pour un maximum d'effet, sinon on a toujours le risque d'affecter sa maintenabilité.</p>
               <p> Avant d'attaquer, voici comment on déclare le lien entre le doument HTML et le document CSS :</p>
               <pre> 
                 &lt;head&gt;
@@ -107,13 +136,15 @@
                   propriete1: valeur1;
                   }
               </pre>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id= "display">
               <h2> Le display </h2>
               <p> La propriété CSS display est la plus importante pour contrôler la mise en page. 
               Chaque élément à une valeur display par défaut dépendante du type de l'élément. 
-              Les valeurs par défaut de la plupart des éléments sont block ou inline. </p>   
+              Les valeurs par défaut de la plupart des éléments sont block ou inline. </p> 
+              <a href = "#retoursommaire" > Retour au sommaire </a>              
             </section>
                     
             <section id="classe">
@@ -134,7 +165,8 @@
               </pre>
               <p> Ici, on a 3 boites. Une boite classe qui a pour valeur "header", et 2 boites id qui ont pour valeurs "tortue" et "site".
               On pourra appliquer des propriétés générales dans la classe qui affecteront les enfants de cette classe, ici les id (boites dans la boite) 
-              puis appliquer des propriétés relatives à chaque id spécifiquement.      
+              puis appliquer des propriétés relatives à chaque id spécifiquement. </p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id= "selecteur">
@@ -168,6 +200,7 @@
               <p> Sélecteur universel * . Il sélectionne toutes les balises, sans exception.</p>
               <p> sélecteur pour sélectionner un élément en fonction de la valeur de son attribut [] . Ex [class = "rouge"] : 
               La règle s'applique à tout les éléments entre accolades ayant pour valeur "rouge"</p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id= "position">
@@ -182,25 +215,25 @@
                 <li> relative : on définit la position d'un élément d'un flux à partir de sa position initiale qu'il aurait dû avoir </li>
                 <li> fixed : l'élément sera positionné et ne bougera plus lors du défilment de la page. L'élément est sorti du flux </li>
               </ul>
-              <p> 
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
             
             <section id= "flexbox">
               <h2> Les flexbox </h2>
-              <p>La flexbox c'est un truc magique pour la gestion de la mise en page qui vous facilitera la vie à condition de bien en comprendre le fonctionnement. </p>
-              <p> L'idée de la flexbox est de donner au contenant la possibilité de redimentionner et modifier ses items pour mieux remplir la place disponible.</p>
-              <p> L'outil flexbox s'utilise avec un contenant (le parent) et des items (les enfants) qui sont imbriqués dans le contenant. Chacun des éléments (parents et enfants)
+              <p>La flexbox c'est un truc magique pour la gestion de la mise en page qui vous facilitera la vie à condition de bien en comprendre le fonctionnement. 
+              L'idée de la flexbox est de donner au contenant la possibilité de redimentionner et modifier ses items pour mieux remplir la place disponible.
+              L'outil flexbox s'utilise avec un contenant (le parent) et des items (les enfants) qui sont imbriqués dans le contenant. Chacun des éléments (parents et enfants)
               ont des attributs différents qui correspondent à des comportements précis.</p>
               <p> Prenons un exemple pour créer une boite générale dans laquelle on souhaiterait intégrer deux boites contenant chacune du texte.</p>
               <p> Exemple de code HTML5:  </p>
               <pre>
                 &lt;div class="flexbox rouge"&gt;         &lt;!--Contenant (parent) avec un fond rouge--&gt;
 
-                 &lt;div class="item vert"&gt;           &lt;!--Item 1 avec un fond vert--&gt;
+                 &lt;div class="item jaune"&gt;           &lt;!--Item 1 avec un fond jaune--&gt;
                     &lt;p&gt; Mon premier texte &lt;/p&gt;
                   &lt;/div&gt;
 
-                 &lt;div class="item bleu"&gt;           &lt;!--Item 2 avec un fond bleu--&gt;
+                 &lt;div class="item orange"&gt;           &lt;!--Item 2 avec un fond orange--&gt;
                     &lt;p&gt; Mon second texte &lt;/p&gt;
                   &lt;/div&gt;
 
@@ -213,29 +246,100 @@
                 }
 
                .item {
-                  flex-basis: 50%;                         &lt;!--On choisi que chaque item occupe 50% de l'espace de son parent--&gt;  
+                  flex-basis: 50%;                         &lt;!--chaque item occupe 50% de l'espace de son parent--&gt;  
                 }
 
                .rouge {
                   background-color: Tomato;
                 }
 
-               .vert {
-                  background-color: YellowGreen;
+               .jaune {
+                  background-color: yellow;
                 }
 
-               .bleu {
-                  background-color: rgba(70,130,180,0.8);
+               .orange {
+                  background-color: orange;
                 }
               </pre>
-              <p> Je vous avouerai que cette outil à priori magique a encore beaucoup de secrets pour moi. Dans cet esprit de comprehension, 
-              voici plus de renseignements sur la flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" > clickouille </a>.</p>              
+              <p> Il existe de nombreuses possibilités d'organiser chaque contenant parent et enfant avec une facilité nouvelle d'organiser les items enfants en colonne.</p>
+              <p> Je vous avouerai que cet outil à magique a encore quelques secrets pour moi. Dans cet esprit de compréhension, 
+              voici plus de renseignements sur la flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" > clickouille </a>.</p>
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
               
-            <section id= "image">
-              <h2> Les images </h2>
-              <p> </p>
-              <p> Pour plus de renseignements sur flexbox, <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" >clickouille </a></p>
+            <section id= "gadget">
+              <h2> Les gadgets </h2>
+              <p> En cours de construction ...... :) </p>
+              <h3> Les pseudo-classes et les pseudo-éléments </h3>
+              <p> Une pseudo-classe est un mot-clé qui peut être ajouté aux sélecteurs afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé 
+              par la déclaration. La pseudo-classe :hover, par exemple, permettra d'appliquer une mise en forme spécifique lorsque l'utilisateur survole 
+              l'élément ciblé par le sélecteur.</p>
+              <pre> 
+                 <!--code HTML dans le body-->
+                 &lt;div class="carre vert"&gt; &lt;/div&gt;
+
+                 <!--code CSS-->
+                 .carre {
+                  height: 150px;
+                  width: 150px;
+                  }
+                  
+                  .vert {
+                  background-color: green;
+                  }
+              </pre>
+              <p> Afin ce créer une pseudo-classe qui va permettre de colorer le carré en jaune lorsqu'on le survole, on ajoute dans le CSS : </p>
+              <pre>
+                  .vert:hover{
+                  background-color: yellow;
+                  }
+              </pre>
+              <p> Ce qui donne :</p>
+              <div class="carre vert"> </div>
+              
+              <p> Les pseudo-éléments sont ajoutés aux sélecteurs pour décrire un état spécial. Ils permettent ainsi de mettre en forme certaines parties du document ou de l'élément
+              Si on ajoute ce code dans le CSS, on va ajouter un ** avant chaque paragraphe (NB : si on écrite after à la place de before, les ** seront à la fin de chaque paragraphe</p>
+              <pre>
+                &lt;!-- à mettre dans le CSS--&gt; 
+                .p::before{
+                 content:"**";
+                }
+              </pre>
+              <p> Pour plus d'informations:   
+              <a href = "https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes"> pseudo-classe </a>, 
+              <a href = "https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments"> pseudo-élément </a>.</p>              
+              
+              <h3> Les transitions </h3>
+              <p> Les transitions sont des effets à appliquer sur certaines propriétés CSS. 
+              Cela va alors calculer tous les états intermédiaires entre un état initial et un état final. </p>
+              <p> Si on reprend un autre carré : </p>              
+              <pre> 
+                 <!--code HTML dans le body-->
+                 &lt;div class="carre2"&gt; &lt;/div&gt;
+
+                 <!--code CSS-->
+                 .carre2 {
+                  height: 150px;
+                  width: 150px;
+                  background-color: blue;
+                  transition width 2s, height 2s, background-color 2s, transform 2s;
+                  }
+                  
+                  .carre2:hover{
+                  transform: rotate(180deg);
+                  height: 150px;
+                  width: 150px;
+                  background-color: pink;
+                  }
+              </pre>
+              
+              <p> Ce qui donne (penser à passer la souris dessus :)) :</p>
+              <div class="carre2"> </div>
+              
+              <h3> Les animations </h3>
+              <p>   </p> 
+              
+              <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>
           </div>
           
