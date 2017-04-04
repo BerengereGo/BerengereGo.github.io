@@ -268,20 +268,20 @@
             </section>
               
             <section id= "gadget">
-              <h2> Les gadgets </h2>
-              <p> En cours de construction ...... :) </p>
+              <h2> Les gadgets </h2>              
               <h3> Les pseudo-classes et les pseudo-éléments </h3>
               <p> Une pseudo-classe est un mot-clé qui peut être ajouté aux sélecteurs afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé 
               par la déclaration. La pseudo-classe :hover, par exemple, permettra d'appliquer une mise en forme spécifique lorsque l'utilisateur survole 
               l'élément ciblé par le sélecteur.</p>
               <pre> 
                  <!--code HTML dans le body-->
-                 &lt;div class="carre vert"&gt; &lt;/div&gt;
+                 &lt;div class="rond vert"&gt; &lt;/div&gt;
 
                  <!--code CSS-->
-                 .carre {
+                 .rond {
                   height: 150px;
                   width: 150px;
+                  border-radius: 180%;
                   }
                   
                   .vert {
@@ -295,7 +295,7 @@
                   }
               </pre>
               <p> Ce qui donne :</p>
-              <div class="carre vert"> </div>
+              <div class="rond vert"> </div>
               
               <p> Les pseudo-éléments sont ajoutés aux sélecteurs pour décrire un état spécial. Ils permettent ainsi de mettre en forme certaines parties du document ou de l'élément
               Si on ajoute ce code dans le CSS, on va ajouter un ** avant chaque paragraphe (NB : si on écrite after à la place de before, les ** seront à la fin de chaque paragraphe</p>
@@ -312,32 +312,34 @@
               <h3> Les transitions </h3>
               <p> Les transitions sont des effets à appliquer sur certaines propriétés CSS. 
               Cela va alors calculer tous les états intermédiaires entre un état initial et un état final. </p>
-              <p> Si on reprend un autre carré : </p>              
+              <p> Si on prend un rond : </p>              
               <pre> 
                  <!--code HTML dans le body-->
-                 &lt;div class="carre2"&gt; &lt;/div&gt;
+                 &lt;div class="carre"&gt; &lt;/div&gt;
 
                  <!--code CSS-->
-                 .carre2 {
-                  height: 150px;
-                  width: 150px;
+                 
+                  .carre {
+                  height: 100px;
+                  width: 100px;
                   background-color: blue;
                   transition width 2s, height 2s, background-color 2s, transform 2s;
-                  }
                   
-                  .carre2:hover{
+                  }
+                  .carre:hover{
                   transform: rotate(180deg);
                   height: 150px;
                   width: 150px;
-                  background-color: pink;
-                  }
+                  background-color: purple;
+                                    }
               </pre>
               
               <p> Ce qui donne (penser à passer la souris dessus :)) :</p>
-              <div class="carre2"> </div>
+              <div class="carre"> </div>
               
               <h3> Les animations </h3>
-              <p>   </p> 
+              <p>  Stop, on souffle un peu pour ne pas vous perdre!
+              Pour plus de renseignements, <a href = "https://developer.mozilla.org/en-US/docs/Web/API/Animation" > par ici les animations </a>. </p> 
               
               <a href = "#retoursommaire" > Retour au sommaire </a>
             </section>

@@ -150,10 +150,11 @@ th {
   empty-cells: hide, show;
 }
 
-.carre {
+.rond {
   height: 100px;
   width: 100px;
-  margin-left: 10%;
+  background-color: green;
+  border-radius: 90%;
   }
   
 .vert {
@@ -161,19 +162,23 @@ th {
   }
   
 .vert:hover{
-  background-color: orange;
+  background-color: yellow;
   }
   
-.carre2 {
+.carre {
   height: 100px;
   width: 100px;
+  margin-left: 10%;
   background-color: blue;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
   }
-  
-.carre2:hover{
+ 
+.carre:hover{
   transform: rotate(180deg); 
   height: 150px;
   width: 150px;
-  background-color: pink;
+  background-color: purple;
   }
+  
+  
+  
