@@ -148,6 +148,7 @@ td {
 th {
   border: 2px double red; /* auront une bordure de 1px */
   empty-cells: hide, show;
+<<<<<<< HEAD
 }
 
 .rond {
@@ -182,3 +183,6 @@ th {
   
   
   
+=======
+}
+>>>>>>> f87a01b4d621d199110c07a3ec2279604d22e2a7
